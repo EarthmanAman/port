@@ -96,51 +96,64 @@ export default function Home() {
         <Slider {...settings} className="mx-48 my-3">
           <div>
             <SiAdobexd size={35} color="#450135" />
-            <p className='text-xs mt-1 text-[#45013]'>Adobe Xd</p>
+            <p className='text-[#45013] mt-1 '>Adobe Xd</p>
           </div>
           <div>
             <SiPython size={35} color="#326a96" />
+            <p className='mt-1 '>Python</p>
           </div>
           <div>
             <DiDjango size={35} color="#092d1f" />
           </div>
           <div>
             <SiJavascript size={35} color="#efd81d" />
+            <p className='mt-1 '>Javascript</p>
           </div>
           <div>
             <SiReact size={35} color="#5ed3f3" />
+            <p className='mt-1 '>React</p>
           </div>
           <div>
             <SiHtml5 size={35} color="#dd4b25" />
+            <p className='mt-1 '>Html</p>
           </div>
           <div>
             <SiCss3 size={35} color="#254bdd" />
+            <p className='mt-1 '>CSS</p>
           </div>
           <div>
             <SiTailwindcss size={35} color="#36b7f0" />
+            <p className='mt-1 '>Tailwind CSS</p>
           </div>
 
           <div>
             <DiSass size={35} color="#c76494" />
+
           </div>
 
           <div>
             <SiAzuredevops size={35} color="#1391f7" />
+            <p className='mt-1 '>Devops</p>
           </div>
           <div>
             <SiDocker size={35} color="#00a5d3" />
+            <p className='mt-1 '>Docker</p>
           </div>
           <div>
             <SiKubernetes size={35} color="#306adf" />
+            <p className='mt-1 '>Kubernetes</p>
           </div>
           <div>
             <SiGithub size={35} color="#1a1e22" />
+            <p className='mt-1 '>Github</p>
           </div>
           <div>
             <SiPostgresql size={35} color="#31648c" />
+            <p className='mt-1 '>Postgresql</p>
           </div>
           <div>
             <SiMysql size={35} color="#005e88" />
+            <p className='mt-1 '>Mysql</p>
           </div>
 
         </Slider>
