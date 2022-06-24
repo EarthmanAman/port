@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply bg-[#fafafa] text-[#161515] tracking-wide
+        @apply bg-[#fafafa] text-[#161515] tracking-wide font-PlayFair
     }
 
     h1,
@@ -13,21 +13,31 @@
     h4,
     h5,
     h6 {
-        @apply font-bold
+        @apply font-semibold
     }
 
     /* prettier-ignore */
     h1 {
-        @apply text-4xl sm:text-5xl md:text-6xl
+        @apply text-2xl mb-1 tracking-[0.4rem]
     }
 
     /* prettier-ignore */
     h2 {
-        @apply text-3xl sm:text-4xl
+        @apply text-xl font-DancingScript font-extrabold
     }
 
     h6 {
-        @apply text-[#5f5e5e]
+        @apply text-[#5f5e5e] my-3.5 text-sm font-extrabold tracking-widest
+    }
+
+    p {
+        @apply tracking-wider text-xs font-Montserrat leading-5
     }
 
 }
+
+/* body {
+    background-image: linear-gradient(rgba(0, 0, 0, -1), rgba(0, 0, 0, -1)),
+        url(../public/assets/background.jpg);
+    background-repeat: no-repeat;
+} */
