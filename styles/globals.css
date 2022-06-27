@@ -9,7 +9,6 @@
 
     h1,
     h2,
-    h3,
     h4,
     h5,
     h6 {
@@ -24,6 +23,10 @@
     /* prettier-ignore */
     h2 {
         @apply text-xl font-DancingScript font-extrabold
+    }
+
+    h3 {
+        @apply font-Montserrat text-3xl tracking-wider leading-10
     }
 
     h6 {

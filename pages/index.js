@@ -1,7 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { SiAdobexd, SiPython, SiJavascript, SiReact, SiHtml5, SiCss3, SiTailwindcss, SiAzuredevops, SiDocker, SiKubernetes, SiGithub, SiPostgresql, SiMysql } from "react-icons/si"
+import {
+  SiAdobexd, SiFigma, SiPython, SiJavascript, SiReact, SiHtml5, SiCss3,
+  SiTailwindcss, SiAzuredevops, SiDocker, SiKubernetes, SiGithub, SiPostgresql,
+  SiMysql, SiSolidity, SiEthereum
+} from "react-icons/si"
 import { DiDjango, DiSass } from "react-icons/di"
+import { TbBrandReactNative } from "react-icons/tb"
 import Slider from "react-slick";
 import NavBar from '../components/home/nav'
 import "slick-carousel/slick/slick.css";
@@ -13,7 +18,7 @@ export default function Home() {
     infinite: true,
     speed: 5000,
     slidesToShow: 5,
-    slidesToScroll: 3,
+    slidesToScroll: 4,
     autoplay: true,
     autoplaySpeed: 5000,
   };
@@ -34,7 +39,7 @@ export default function Home() {
 
           <h1>Hashim Athman</h1>
           <h1>Full Stack Developer</h1>
-          <h2>Based in <span className='text-[#f60961]'>Kenya</span></h2>
+          <h2>My work is always a <span className='text-[#f60961]'>Wooow</span></h2>
         </div>
 
         <div className='flex justify-between items-start'>
@@ -99,6 +104,10 @@ export default function Home() {
             <p className='text-[#45013] mt-1 '>Adobe Xd</p>
           </div>
           <div>
+            <SiFigma size={35} color="#9d56f7" />
+            <p className='text-[#45013] mt-1 '>Figma</p>
+          </div>
+          <div>
             <SiPython size={35} color="#326a96" />
             <p className='mt-1 '>Python</p>
           </div>
@@ -112,6 +121,10 @@ export default function Home() {
           <div>
             <SiReact size={35} color="#5ed3f3" />
             <p className='mt-1 '>React</p>
+          </div>
+          <div>
+            <TbBrandReactNative size={35} color="#5ed3f3" />
+            <p className='mt-1 '>React Native</p>
           </div>
           <div>
             <SiHtml5 size={35} color="#dd4b25" />
@@ -154,6 +167,15 @@ export default function Home() {
           <div>
             <SiMysql size={35} color="#005e88" />
             <p className='mt-1 '>Mysql</p>
+          </div>
+
+          <div>
+            <SiSolidity size={35} color="#363636" />
+            <p className='mt-1 '>Solidity</p>
+          </div>
+          <div>
+            <SiEthereum size={35} color="#5b6087" />
+            <p className='mt-1 '>Ethereum</p>
           </div>
 
         </Slider>
