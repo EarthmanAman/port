@@ -57,6 +57,10 @@ export default function Home() {
                     </div>
                 </div>
 
+                <div>
+                    <p>I have worked with Hashim, he is a good developer and knows what he is doing. I delivered ecery milestone of the project on time.
+                        I highly recommend him.</p>
+                </div>
             </div>
         </div>
     )
