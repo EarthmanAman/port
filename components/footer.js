@@ -1,39 +1,15 @@
-import Image from 'next/image'
-import Link from "next/link";
 
 import { FaTwitter, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
-export default function NavBar() {
+export default function Footer() {
     return (
-        <div className='flex justify-between items-center'>
+        <footer className='flex justify-between items-center p-14 border-solid border-t-2 '>
             <div className='w-full'>
-                <ul className='flex items-center'>
-
-                    <li className='mr-10 text-xs font-bold'>
-                        <Link href="/" >
-                            HOME
-                        </Link>
-                    </li>
-
-                    <li className='mr-10 text-xs font-bold'>
-                        <Link href="/works">
-                            WORKS
-                        </Link>
-                    </li>
-
-                    <li className='mr-10 text-xs font-bold'>
-                        <Link href="/about">
-                            ABOUT
-                        </Link>
-                    </li>
-
-                    <li className='mr-10 text-xs font-bold'>CONTACT</li>
-
-                </ul>
+                <p>&copy; 2022 Hashim Athman. All rights reserved </p>
             </div>
 
             <div className='w-full flex justify-center'>
-                <Image src={"/../public/assets/logo.ico"} width="50" height="50" alt="logo" />
+                <p>contact@hashimathman.com</p>
             </div>
 
             <div className='w-full'>
@@ -59,6 +35,6 @@ export default function NavBar() {
                 </div>
             </div>
 
-        </div >
+        </footer >
     )
 }

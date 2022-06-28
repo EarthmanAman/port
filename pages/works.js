@@ -7,6 +7,7 @@ import Dash from "../public/assets/works/dash.png"
 import Gree from "../public/assets/works/gree.png"
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri"
 import Slider from 'react-slick';
+import Footer from '../components/footer';
 
 export default function Home() {
     const settings = {
@@ -16,7 +17,7 @@ export default function Home() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 7000,
     };
     return (
         <div>
@@ -123,7 +124,11 @@ export default function Home() {
 
                     </Slider>
                 </div>
+
+                <Footer />
             </div>
+
+
         </div>
     )
 }

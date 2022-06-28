@@ -29,6 +29,10 @@
         @apply font-Montserrat text-3xl tracking-wider leading-10
     }
 
+    h5 {
+        @apply tracking-wider leading-7 text-lg
+    }
+
     h6 {
         @apply text-[#5f5e5e] my-3.5 text-sm font-extrabold tracking-widest
     }
