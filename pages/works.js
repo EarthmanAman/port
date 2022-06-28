@@ -5,9 +5,19 @@ import NavBar from '../components/home/nav'
 import OplScreen from "../public/assets/works/opl_screen.png"
 import Dash from "../public/assets/works/dash.png"
 import Gree from "../public/assets/works/gree.png"
+import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri"
+import Slider from 'react-slick';
 
 export default function Home() {
-
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 5000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+    };
     return (
         <div>
             <Head>
@@ -57,9 +67,61 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div>
-                    <p>I have worked with Hashim, he is a good developer and knows what he is doing. I delivered ecery milestone of the project on time.
-                        I highly recommend him.</p>
+                <div className='border-solid border-t-2 border-[#16151] mt-20 py-20 px-36 text-center'>
+
+                    <Slider {...settings} className="">
+                        <div>
+                            <div className='relative'>
+                                <span className='absolute left-0 top-0'><RiDoubleQuotesL /></span>
+                                <p className='text-2xl px-3'>
+
+                                    I have worked with Hashim, he is a good developer and knows what he is doing. I delivered ecery milestone of the project on time.
+                                    I highly recommend him.
+                                </p>
+
+                                <span className='absolute right-16 bottom-2'><RiDoubleQuotesR /></span>
+                            </div>
+                            <div className='my-8'>
+                                <p className='font-bold text-base'>John Doe</p>
+                                <p>Product manager <span className='text-blue-700'>company</span></p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className='relative'>
+                                <span className='absolute left-0 top-0'><RiDoubleQuotesL /></span>
+                                <p className='text-2xl px-3'>
+
+                                    I have worked with Hashim, he is a good developer and knows what he is doing. I delivered ecery milestone of the project on time.
+                                    I highly recommend him.
+                                </p>
+
+                                <span className='absolute right-16 bottom-2'><RiDoubleQuotesR /></span>
+                            </div>
+                            <div className='my-8'>
+                                <p className='font-bold text-base'>John Doe</p>
+                                <p>Product manager <span className='text-blue-700'>company</span></p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className='relative'>
+                                <span className='absolute left-0 top-0'><RiDoubleQuotesL /></span>
+                                <p className='text-2xl px-3'>
+
+                                    I have worked with Hashim, he is a good developer and knows what he is doing. I delivered ecery milestone of the project on time.
+                                    I highly recommend him.
+                                </p>
+
+                                <span className='absolute right-16 bottom-2'><RiDoubleQuotesR /></span>
+                            </div>
+                            <div className='my-8'>
+                                <p className='font-bold text-base'>John Doe</p>
+                                <p>Product manager <span className='text-blue-700'>company</span></p>
+                            </div>
+                        </div>
+
+                    </Slider>
                 </div>
             </div>
         </div>
