@@ -48,40 +48,78 @@ export default function Home() {
                     <h5>Plus, here are some things that inspire me.</h5>
                 </div>
 
-                <div className='flex space-x-4 w-full h-60 mb-14'>
-                    <div className='w-full h-full'>
-                        <Iframe
-                            url="https://www.youtube.com/embed/54ZCz8mc7jE"
-                            width='100%'
-                            height='100%'
-                            id="myId"
-                            className="myClassname"
-                            display="initial"
-                            position="relative" />
+                <div className='mb-14'>
+                    <div className='flex space-x-4 w-full h-60 mb-5'>
+                        <div className='w-full h-full'>
+                            <Iframe
+                                url="https://www.youtube.com/embed/54ZCz8mc7jE"
+                                width='100%'
+                                height='100%'
+                                id="myId"
+                                className="myClassname"
+                                display="initial"
+                                position="relative" />
+                        </div>
+
+                        <div className='w-full h-full'>
+                            <Iframe
+                                url="https://www.youtube.com/embed/AqqMtcabNr8"
+                                width='100%'
+                                height='100%'
+                                id="myId"
+                                className="myClassname"
+                                display="initial"
+                                position="relative" />
+                        </div>
+
+                        <div className='w-full h-full'>
+                            <Iframe
+                                url="https://www.youtube.com/embed/54ZCz8mc7jE"
+                                width='100%'
+                                height='100%'
+                                id="myId"
+                                className="myClassname"
+                                display="initial"
+                                position="relative" />
+                        </div>
+
                     </div>
 
-                    <div className='w-full h-full'>
-                        <Iframe
-                            url="https://www.youtube.com/embed/AqqMtcabNr8"
-                            width='100%'
-                            height='100%'
-                            id="myId"
-                            className="myClassname"
-                            display="initial"
-                            position="relative" />
-                    </div>
+                    <div className='flex space-x-4 w-full h-60 mb-5'>
+                        <div className='w-full h-full'>
+                            <Iframe
+                                url="https://www.youtube.com/embed/54ZCz8mc7jE"
+                                width='100%'
+                                height='100%'
+                                id="myId"
+                                className="myClassname"
+                                display="initial"
+                                position="relative" />
+                        </div>
 
-                    <div className='w-full h-full'>
-                        <Iframe
-                            url="https://www.youtube.com/embed/54ZCz8mc7jE"
-                            width='100%'
-                            height='100%'
-                            id="myId"
-                            className="myClassname"
-                            display="initial"
-                            position="relative" />
-                    </div>
+                        <div className='w-full h-full'>
+                            <Iframe
+                                url="https://www.youtube.com/embed/AqqMtcabNr8"
+                                width='100%'
+                                height='100%'
+                                id="myId"
+                                className="myClassname"
+                                display="initial"
+                                position="relative" />
+                        </div>
 
+                        <div className='w-full h-full'>
+                            <Iframe
+                                url="https://www.youtube.com/embed/54ZCz8mc7jE"
+                                width='100%'
+                                height='100%'
+                                id="myId"
+                                className="myClassname"
+                                display="initial"
+                                position="relative" />
+                        </div>
+
+                    </div>
                 </div>
                 <Footer />
             </div>
