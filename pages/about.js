@@ -49,7 +49,7 @@ export default function Home() {
                 </div>
 
                 <div className='mb-14'>
-                    <div className='flex space-x-4 w-full h-60 mb-5'>
+                    <div className='flex space-x-7 w-full h-60 mb-5'>
                         <div className='w-full h-full'>
                             <Iframe
                                 url="https://www.youtube.com/embed/54ZCz8mc7jE"
@@ -85,7 +85,7 @@ export default function Home() {
 
                     </div>
 
-                    <div className='flex space-x-4 w-full h-60 mb-5'>
+                    <div className='flex space-x-7 w-full h-60 mb-5'>
                         <div className='w-full h-full'>
                             <Iframe
                                 url="https://www.youtube.com/embed/54ZCz8mc7jE"
