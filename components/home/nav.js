@@ -2,10 +2,13 @@ import Image from 'next/image'
 import Link from "next/link";
 
 import { FaTwitter, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion"
+
+import { slideInFromTop } from '../animations';
 
 export default function NavBar() {
     return (
-        <div className='flex justify-between items-center'>
+        <motion.div variants={slideInFromTop} className='flex justify-between items-center'>
             <div className='w-full'>
                 <ul className='flex items-center'>
 
@@ -27,7 +30,11 @@ export default function NavBar() {
                         </Link>
                     </li>
 
-                    <li className='mr-10 text-xs font-bold'>CONTACT</li>
+                    {/* <li className='mr-10 text-xs font-bold'>
+                        <Link href="/contact">
+                            CONTACT
+                        </Link>
+                    </li> */}
 
                 </ul>
             </div>
@@ -59,6 +66,6 @@ export default function NavBar() {
                 </div>
             </div>
 
-        </div >
+        </motion.div >
     )
 }
