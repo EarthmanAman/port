@@ -10,7 +10,7 @@ export const fadeIn = {
 
         opacity: 1,
         transition: {
-            duration: 2,
+            duration: 1.5,
             ease: easing
         }
     }
@@ -19,18 +19,36 @@ export const fadeIn = {
 export const slideInFromTop = {
     initial: {
         y: -50,
+        opacity: 0,
     },
 
     animate: {
 
         y: 0,
+        opacity: 1,
+        transition: {
+            duration: 1.5,
+            ease: easing
+        }
+    }
+}
+
+export const slideInFromBottom = {
+    initial: {
+        y: 50,
+        opacity: 0,
+    },
+
+    animate: {
+
+        y: 0,
+        opacity: 1,
         transition: {
             duration: 1,
             ease: easing
         }
     }
 }
-
 export const slideInLeftFast = {
     initial: {
         x: -100,
@@ -42,7 +60,7 @@ export const slideInLeftFast = {
         x: 0,
         opacity: 1,
         transition: {
-            duration: 0.5,
+            duration: 2,
             ease: easing
         }
     }
@@ -59,7 +77,7 @@ export const slideInRightFast = {
         x: 0,
         opacity: 1,
         transition: {
-            duration: 0.5,
+            duration: 2,
             ease: easing
         }
     }
@@ -68,6 +86,14 @@ export const stagger = {
     animate: {
         transition: {
             staggerChildren: 0.5
+        }
+    }
+}
+
+export const antiStagger = {
+    animate: {
+        transition: {
+            staggerChildren: 0
         }
     }
 }

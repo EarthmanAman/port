@@ -13,7 +13,7 @@ import Slider from "react-slick";
 import NavBar from '../components/home/nav'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { fadeIn, slideInLeftFast, stagger } from '../components/animations'
+import { fadeIn, slideInLeftFast, slideInRightFast, slideInFromBottom, stagger, antiStagger } from '../components/animations'
 
 export default function Home() {
   const settings = {
@@ -36,43 +36,41 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
       </Head>
 
-      <div className='h-screen px-28 py-1'>
-        <motion.div variants={stagger}>
-          <NavBar />
-          <div className='w-full text-center my-8 mt-3 tracking-widest'>
+      <motion.div variants={stagger} className='h-screen px-28 py-1'>
+        <NavBar />
+        <motion.div variants={fadeIn} className='w-full text-center my-8 mt-3 tracking-widest'>
 
-            <motion.h1 variants={fadeIn}>Hashim Athman</motion.h1>
-            <motion.h1 variants={fadeIn}>Full Stack Developer</motion.h1>
-            <motion.div variants={fadeIn}>
-              <h2>My work is always a <span className="text-[#f60961]">Wooow</span></h2>
+          <motion.h1>Hashim Athman</motion.h1>
+          <motion.h1>Full Stack Developer</motion.h1>
+          <motion.div>
+            <h2>My work is always a <span className="text-[#f60961]">Wooow</span></h2>
 
-            </motion.div>
-          </div>
+          </motion.div>
         </motion.div>
 
-        <motion.div initial="initial" animate="animate" transition={{ delay: 5 }} className='flex justify-between items-start'>
-          <div className='w-full flex flex-col justify-start items-start pr-20'>
+        <motion.div variants={antiStagger} className='flex justify-between items-start'>
+          <motion.div variants={slideInLeftFast} className='w-full flex flex-col justify-start items-start pr-20'>
             <div>
-              <motion.h6 variants={slideInLeftFast}>BIOGRAPHY</motion.h6>
-              <motion.p variants={slideInLeftFast}>Work for money and design for love! I'm Hashim, a full stack developer based in Kenya</motion.p>
+              <h6>BIOGRAPHY</h6>
+              <p>Work for money and design for love! I'm Hashim, a full stack developer based in Kenya</p>
             </div>
 
             <div>
-              <motion.h6 variants={slideInLeftFast}>CONTACT</motion.h6>
-              <motion.p variants={slideInLeftFast}>Mombasa, Kenya</motion.p>
-              <motion.p variants={slideInLeftFast}>contact@hashimathman.com</motion.p>
-              <motion.p variants={slideInLeftFast}>+254 70146 7872</motion.p>
+              <h6>CONTACT</h6>
+              <p>Mombasa, Kenya</p>
+              <p>contact@hashimathman.com</p>
+              <p>+254 70146 7872</p>
 
             </div>
 
             <div>
-              <motion.h6 variants={slideInLeftFast}>SERVICES</motion.h6>
-              <motion.p variants={slideInLeftFast}>UI/UX Design</motion.p>
-              <motion.p variants={slideInLeftFast}>Backend Development</motion.p>
-              <motion.p variants={slideInLeftFast}>Frontend Development</motion.p>
-              <motion.p variants={slideInLeftFast}>Mobile Development</motion.p>
+              <h6>SERVICES</h6>
+              <p>UI/UX Design</p>
+              <p>Backend Development</p>
+              <p>Frontend Development</p>
+              <p>Mobile Development</p>
             </div>
-          </div>
+          </motion.div>
 
           <motion.div variants={fadeIn} className='w-full relative -top-2'>
             <div className='h-85 relative p-10 border-solid border-2 rounded-full'>
@@ -83,7 +81,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <div className='w-full flex flex-col justify-end items-end text-right'>
+          <motion.div variants={slideInRightFast} className='w-full flex flex-col justify-end items-end text-right'>
             <div>
               <h6>YEARS OF<br />EXPERIENCE</h6>
               <h2>3</h2>
@@ -98,96 +96,98 @@ export default function Home() {
               <h6>PROJECTS DONE</h6>
               <h2>10</h2>
             </div>
-          </div>
+          </motion.div>
 
 
 
         </motion.div>
-        <div className='text-center mt-8'>
-          <h2>Skills</h2>
-        </div>
-        <Slider {...settings} className="mx-48 my-3">
-          <div>
-            <SiAdobexd size={35} color="#450135" />
-            <p className='text-[#45013] mt-1 '>Adobe Xd</p>
+        <motion.div variants={slideInFromBottom}>
+          <div className='text-center mt-8'>
+            <h2>Skills</h2>
           </div>
-          <div>
-            <SiFigma size={35} color="#9d56f7" />
-            <p className='text-[#45013] mt-1 '>Figma</p>
-          </div>
-          <div>
-            <SiPython size={35} color="#326a96" />
-            <p className='mt-1 '>Python</p>
-          </div>
-          <div>
-            <DiDjango size={35} color="#092d1f" />
-          </div>
-          <div>
-            <SiJavascript size={35} color="#efd81d" />
-            <p className='mt-1 '>Javascript</p>
-          </div>
-          <div>
-            <SiReact size={35} color="#5ed3f3" />
-            <p className='mt-1 '>React</p>
-          </div>
-          <div>
-            <TbBrandReactNative size={35} color="#5ed3f3" />
-            <p className='mt-1 '>React Native</p>
-          </div>
-          <div>
-            <SiHtml5 size={35} color="#dd4b25" />
-            <p className='mt-1 '>Html</p>
-          </div>
-          <div>
-            <SiCss3 size={35} color="#254bdd" />
-            <p className='mt-1 '>CSS</p>
-          </div>
-          <div>
-            <SiTailwindcss size={35} color="#36b7f0" />
-            <p className='mt-1 '>Tailwind CSS</p>
-          </div>
+          <Slider {...settings} className="mx-48 my-3">
+            <div>
+              <SiAdobexd size={35} color="#450135" />
+              <p className='text-[#45013] mt-1 '>Adobe Xd</p>
+            </div>
+            <div>
+              <SiFigma size={35} color="#9d56f7" />
+              <p className='text-[#45013] mt-1 '>Figma</p>
+            </div>
+            <div>
+              <SiPython size={35} color="#326a96" />
+              <p className='mt-1 '>Python</p>
+            </div>
+            <div>
+              <DiDjango size={35} color="#092d1f" />
+            </div>
+            <div>
+              <SiJavascript size={35} color="#efd81d" />
+              <p className='mt-1 '>Javascript</p>
+            </div>
+            <div>
+              <SiReact size={35} color="#5ed3f3" />
+              <p className='mt-1 '>React</p>
+            </div>
+            <div>
+              <TbBrandReactNative size={35} color="#5ed3f3" />
+              <p className='mt-1 '>React Native</p>
+            </div>
+            <div>
+              <SiHtml5 size={35} color="#dd4b25" />
+              <p className='mt-1 '>Html</p>
+            </div>
+            <div>
+              <SiCss3 size={35} color="#254bdd" />
+              <p className='mt-1 '>CSS</p>
+            </div>
+            <div>
+              <SiTailwindcss size={35} color="#36b7f0" />
+              <p className='mt-1 '>Tailwind CSS</p>
+            </div>
 
-          <div>
-            <DiSass size={35} color="#c76494" />
+            <div>
+              <DiSass size={35} color="#c76494" />
 
-          </div>
+            </div>
 
-          <div>
-            <SiAzuredevops size={35} color="#1391f7" />
-            <p className='mt-1 '>Devops</p>
-          </div>
-          <div>
-            <SiDocker size={35} color="#00a5d3" />
-            <p className='mt-1 '>Docker</p>
-          </div>
-          <div>
-            <SiKubernetes size={35} color="#306adf" />
-            <p className='mt-1 '>Kubernetes</p>
-          </div>
-          <div>
-            <SiGithub size={35} color="#1a1e22" />
-            <p className='mt-1 '>Github</p>
-          </div>
-          <div>
-            <SiPostgresql size={35} color="#31648c" />
-            <p className='mt-1 '>Postgresql</p>
-          </div>
-          <div>
-            <SiMysql size={35} color="#005e88" />
-            <p className='mt-1 '>Mysql</p>
-          </div>
+            <div>
+              <SiAzuredevops size={35} color="#1391f7" />
+              <p className='mt-1 '>Devops</p>
+            </div>
+            <div>
+              <SiDocker size={35} color="#00a5d3" />
+              <p className='mt-1 '>Docker</p>
+            </div>
+            <div>
+              <SiKubernetes size={35} color="#306adf" />
+              <p className='mt-1 '>Kubernetes</p>
+            </div>
+            <div>
+              <SiGithub size={35} color="#1a1e22" />
+              <p className='mt-1 '>Github</p>
+            </div>
+            <div>
+              <SiPostgresql size={35} color="#31648c" />
+              <p className='mt-1 '>Postgresql</p>
+            </div>
+            <div>
+              <SiMysql size={35} color="#005e88" />
+              <p className='mt-1 '>Mysql</p>
+            </div>
 
-          <div>
-            <SiSolidity size={35} color="#363636" />
-            <p className='mt-1 '>Solidity</p>
-          </div>
-          <div>
-            <SiEthereum size={35} color="#5b6087" />
-            <p className='mt-1 '>Ethereum</p>
-          </div>
+            <div>
+              <SiSolidity size={35} color="#363636" />
+              <p className='mt-1 '>Solidity</p>
+            </div>
+            <div>
+              <SiEthereum size={35} color="#5b6087" />
+              <p className='mt-1 '>Ethereum</p>
+            </div>
 
-        </Slider>
-      </div>
+          </Slider>
+        </motion.div>
+      </motion.div>
     </motion.div>
   )
 }
