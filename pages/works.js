@@ -71,33 +71,6 @@ export default function Home() {
                     </Link>
                 </motion.div>
 
-                <motion.div variants={fadeIn} className='grid md:grid-cols-3 gap-5 mb-5'>
-                    <Link href="/">
-                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
-                            <Image src={OplScreen} alt="work 1" className='rounded-xl group-hover:opacity-10' />
-                            <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                                <h2 className='text-[#fafafa]'>OPL Dashboard</h2>
-                            </div>
-                        </motion.div>
-                    </Link>
-                    <Link href="/">
-                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
-                            <Image src={Dash} alt="work 1" className='rounded-xl group-hover:opacity-10' />
-                            <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                                <h2 className='text-[#fafafa]'>OPL Dashboard</h2>
-                            </div>
-                        </motion.div>
-                    </Link>
-                    <Link href="/">
-                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
-                            <Image src={Gree} alt="work 1" className='rounded-xl group-hover:opacity-10' />
-                            <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                                <h2 className='text-[#fafafa]'>OPL Dashboard</h2>
-                            </div>
-                        </motion.div>
-                    </Link>
-                </motion.div>
-
 
                 <motion.div variants={fadeIn} className='border-solid border-t-2 border-[#16151] mt-20 py-20 px-36 text-center'>
 
