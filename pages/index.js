@@ -41,7 +41,7 @@ export default function Home() {
         <motion.div variants={fadeIn} className='w-full text-center my-8 mt-3 tracking-widest'>
 
           <motion.h1>Hashim Athman</motion.h1>
-          <motion.h1>Full Stack Developer</motion.h1>
+          <motion.h1>Software Developer/Admin</motion.h1>
           <motion.div>
             <h2>My work is always a <span className="text-[#f60961]">Wooow</span></h2>
 

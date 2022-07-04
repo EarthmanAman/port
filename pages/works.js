@@ -5,6 +5,9 @@ import NavBar from '../components/home/nav'
 import OplScreen from "../public/assets/works/opl_screen.png"
 import Dash from "../public/assets/works/dash.png"
 import Gree from "../public/assets/works/gree.png"
+
+import SpadeQuiz from "../public/assets/works/spadequiz.png"
+import Bill from "../public/assets/works/bill.png"
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri"
 import { motion } from "framer-motion"
 import Slider from 'react-slick';
@@ -43,7 +46,7 @@ export default function Home() {
 
                 <motion.div variants={fadeIn} className='grid md:grid-cols-3 gap-5 mb-5'>
                     <Link href="/">
-                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
+                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
                             <Image src={OplScreen} alt="work 1" className='rounded-xl group-hover:opacity-10' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                                 <h2 className='text-[#fafafa]'>OPL Dashboard</h2>
@@ -51,18 +54,18 @@ export default function Home() {
                         </motion.div>
                     </Link>
                     <Link href="/">
-                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
-                            <Image src={Dash} alt="work 1" className='rounded-xl group-hover:opacity-10' />
+                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
+                            <Image src={SpadeQuiz} alt="work 1" className='rounded-xl group-hover:opacity-10 w-full h-auto' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                                <h2 className='text-[#fafafa]'>OPL Dashboard</h2>
+                                <h2 className='text-[#fafafa]'>SpadeQuiz</h2>
                             </div>
                         </motion.div>
                     </Link>
                     <Link href="/">
                         <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
-                            <Image src={Gree} alt="work 1" className='rounded-xl group-hover:opacity-10' />
+                            <Image src={Bill} alt="work 1" className='rounded-xl group-hover:opacity-10' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                                <h2 className='text-[#fafafa]'>OPL Dashboard</h2>
+                                <h2 className='text-[#fafafa]'>Bill Management</h2>
                             </div>
                         </motion.div>
                     </Link>
