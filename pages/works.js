@@ -41,7 +41,7 @@ export default function Home() {
                 <motion.div variants={fadeIn} className='m-10'>
                     <h3>Hello good people <span className='text-lg'>&#128075;</span></h3>
                     <h3>Each work has an indicator describing its category as</h3>
-                    <h3>UI/UX Design, Backend, Frontend or Both</h3>
+                    <h3>UI/UX Design, Backend, Frontend or Both </h3>
                 </motion.div>
 
                 <motion.div variants={fadeIn} className='grid md:grid-cols-3 gap-5 mb-5'>
