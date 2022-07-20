@@ -45,7 +45,7 @@ export default function Home() {
                 </motion.div>
 
                 <motion.div variants={fadeIn} className='grid md:grid-cols-3 gap-5 mb-5'>
-                    <Link href="/">
+                    <Link href="/opl_project">
                         <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
                             <Image src={OplScreen} alt="work 1" className='rounded-xl group-hover:opacity-10' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
