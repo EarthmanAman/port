@@ -3,8 +3,6 @@ import Image from 'next/image'
 import Link from "next/link";
 import NavBar from '../components/home/nav'
 import OplScreen from "../public/assets/works/opl_screen.png"
-import Dash from "../public/assets/works/dash.png"
-import Gree from "../public/assets/works/gree.png"
 
 import SpadeQuiz from "../public/assets/works/spadequiz.png"
 import Bill from "../public/assets/works/bill.png"
