@@ -12,9 +12,9 @@ import Header from '../components/head';
 import NavBar from '../components/home/nav';
 
 import OplScreen from "../public/assets/works/main_screen.png"
-import OplGraphs from "../public/assets/works/monthly.png"
+import OplGraphs from "../public/assets/works/monthly1.png"
 import OplSales from "../public/assets/works/sale_pic.png"
-import Customer from "../public/assets/works/customer.png"
+import Customer from "../public/assets/works/customer1.png"
 
 const imageLoader = require("../loader");
 

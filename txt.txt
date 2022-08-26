@@ -5,3 +5,4 @@
     "export": "next export",
     "lint": "next lint"
   },
+  change image file
