@@ -82,18 +82,18 @@ export default function Home() {
 
                 <div className='w-full'>
                     <div className='w-full flex space-x-2 mb-5'>
-                        <div className='w-full shadow-xl shadow-gray-400'>
+                        <div className='w-full shadow-md shadow-gray-400'>
                             <Image loader={imageLoader} layout='responsive' src={OplScreen} alt="hero image" />
                         </div>
-                        <div className='w-full shadow-xl shadow-gray-400'>
+                        <div className='w-full shadow-md shadow-gray-400'>
                             <Image loader={imageLoader} layout='responsive' src={OplGraphs} alt="hero image" />
                         </div>
                     </div>
                     <div className='w-full flex space-x-2 mb-5'>
-                        <div className='w-full shadow-xl shadow-gray-400'>
+                        <div className='w-full shadow-md shadow-gray-400'>
                             <Image loader={imageLoader} layout='responsive' src={OplSales} alt="hero image" />
                         </div>
-                        <div className='w-full shadow-xl shadow-gray-400'>
+                        <div className='w-full shadow-md shadow-gray-400'>
                             <Image loader={imageLoader} layout='responsive' src={Customer} alt="hero image" />
                         </div>
                     </div>
