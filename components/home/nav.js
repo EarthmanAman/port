@@ -5,7 +5,8 @@ import { FaTwitter, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion"
 
 import { slideInFromTop } from '../animations';
-
+import Logo from '../../public/assets/logo.ico'
+const imageLoader = require("../../loader");
 export default function NavBar() {
     return (
         <motion.div variants={slideInFromTop} className='flex justify-between items-center'>
@@ -40,7 +41,7 @@ export default function NavBar() {
             </div>
 
             <div className='w-full flex justify-center'>
-                <Image src={"/../public/assets/logo.ico"} width="50" height="50" alt="logo" />
+                <Image loader={imageLoader} src={Logo} width="50" height="50" alt="logo" />
             </div>
 
             <div className='w-full'>

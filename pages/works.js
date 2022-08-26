@@ -12,6 +12,8 @@ import Slider from 'react-slick';
 import Footer from '../components/footer';
 import { fadeIn, stagger } from '../components/animations';
 
+const imageLoader = require("../loader");
+
 export default function Home() {
     const settings = {
         dots: true,
@@ -45,7 +47,7 @@ export default function Home() {
                 <motion.div variants={fadeIn} className='grid md:grid-cols-3 gap-5 mb-5'>
                     <Link href="/opl_project">
                         <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
-                            <Image src={OplScreen} alt="work 1" className='rounded-xl group-hover:opacity-10' />
+                            <Image loader={imageLoader} src={OplScreen} alt="work 1" className='rounded-xl group-hover:opacity-10' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                                 <h2 className='text-[#fafafa]'>OPL Dashboard</h2>
                             </div>
@@ -53,7 +55,7 @@ export default function Home() {
                     </Link>
                     <Link href="/">
                         <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
-                            <Image src={SpadeQuiz} alt="work 1" className='rounded-xl group-hover:opacity-10 w-full h-auto' />
+                            <Image loader={imageLoader} src={SpadeQuiz} alt="work 1" className='rounded-xl group-hover:opacity-10 w-full h-auto' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                                 <h2 className='text-[#fafafa]'>SpadeQuiz</h2>
                             </div>
@@ -61,7 +63,7 @@ export default function Home() {
                     </Link>
                     <Link href="/">
                         <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
-                            <Image src={Bill} alt="work 1" className='rounded-xl group-hover:opacity-10' />
+                            <Image loader={imageLoader} src={Bill} alt="work 1" className='rounded-xl group-hover:opacity-10' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                                 <h2 className='text-[#fafafa]'>Bill Management</h2>
                             </div>

@@ -15,6 +15,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { fadeIn, slideInLeftFast, slideInRightFast, slideInFromBottom, stagger, antiStagger } from '../components/animations'
 
+const imageLoader = require("../loader");
+
 export default function Home() {
   const settings = {
     dots: true,
@@ -83,13 +85,17 @@ export default function Home() {
 
           <motion.div variants={slideInRightFast} className='w-full flex flex-col justify-end items-end text-right'>
             <div>
-              <h6>YEARS OF<br />EXPERIENCE</h6>
-              <h2>3</h2>
+              <h6>PROFESSIONAL<br />CERTIFICATIONS</h6>
+              <p>Google UI/UX certification</p>
+              <p>Google Project Management certification</p>
+              <p>Google IT Support certification</p>
             </div>
 
             <div>
-              <h6>SATISFACTION<br />CLIENT</h6>
-              <h2>100%</h2>
+              <h6><br />OTHER CERTIFICATIONS</h6>
+              <p className='mb-2'>Advanced CSS and Sass: Flexbox, Grid, Animations</p>
+              <p>Ethereum and Solidity: The Complete Developer’s
+                Guide</p>
             </div>
 
             <div>

@@ -6,6 +6,9 @@ import Footer from '../components/footer';
 import Header from '../components/head';
 import NavBar from '../components/home/nav';
 import Profile from '../public/assets/pic.jpg'
+
+const imageLoader = require("../loader");
+
 export default function Home() {
 
     return (
@@ -25,22 +28,22 @@ export default function Home() {
                             I’ve found myself in language learning, motion media, visual design, front-end, and smart education.</p>
                     </div>
                     <div className='p-16'>
-                        <Image src={Profile} alt="profile pic" className='rounded-lg' />
+                        <Image loader={imageLoader} src={Profile} alt="profile pic" className='rounded-lg' />
                     </div>
                 </div>
 
                 <div className='flex space-x-4 py-12 border-solid border-y-2'>
                     <div>
-                        <Image src={Profile} alt="pic 1" />
+                        <Image loader={imageLoader} src={Profile} alt="pic 1" />
                     </div>
                     <div>
-                        <Image src={Profile} alt="pic 1" />
+                        <Image loader={imageLoader} src={Profile} alt="pic 1" />
                     </div>
                     <div>
-                        <Image src={Profile} alt="pic 1" />
+                        <Image loader={imageLoader} src={Profile} alt="pic 1" />
                     </div>
                     <div>
-                        <Image src={Profile} alt="pic 1" />
+                        <Image loader={imageLoader} src={Profile} alt="pic 1" />
                     </div>
                 </div>
 

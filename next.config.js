@@ -6,6 +6,9 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  images: {
+    loader: "custom"
+  }
 }
 
 module.exports = nextConfig
