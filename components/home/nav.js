@@ -10,7 +10,7 @@ const imageLoader = require("../../loader");
 export default function NavBar() {
     return (
         <motion.div variants={slideInFromTop} className='flex justify-between items-center'>
-            <div className='w-full'>
+            <div className='w-full '>
                 <ul className='flex items-center'>
 
                     <li className='mr-10 text-xs font-bold'>

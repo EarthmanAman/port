@@ -1,22 +1,23 @@
 import Image from 'next/image'
 import { FaEye } from "react-icons/fa"
 import {
-    SiMinutemailer,
-    SiAdobexd, SiPython, SiReact, SiCss3, SiPostgresql,
+    SiMinutemailer, SiPython, SiHtml5, SiCss3, SiGithub
 } from "react-icons/si"
-import { DiDjango, DiSass } from "react-icons/di"
+import { DiDjango } from "react-icons/di"
 import { BsTools } from "react-icons/bs"
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Footer from '../components/footer';
 import Header from '../components/head';
 import NavBar from '../components/home/nav';
-import Slider from "react-slick";
-import SpadequizMain from "../public/assets/works/spadequiz.png"
-import Admin from "../public/assets/works/admin.png"
-import Announcements from "../public/assets/works/announcements.png"
-import Report from "../public/assets/works/report.png"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
+import BillLogin from "../public/assets/works/bill2.png"
+import HomePage from "../public/assets/works/home.png"
+import SubscriptionPage from "../public/assets/works/subscription.png"
+import InvoicePage from "../public/assets/works/invoices.png"
+import ProfilePage from "../public/assets/works/profile.png"
+
 const imageLoader = require("../loader");
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
         infinite: true,
         speed: 5000,
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         autoplay: true,
         autoplaySpeed: 5000,
     };
@@ -36,17 +37,13 @@ export default function Home() {
             <div className=' px-28 py-1'>
                 <NavBar />
                 <div className='my-10'>
-                    <h3 className='font-bold'>Spadequiz A Gaming Tracking Portal</h3>
+                    <h3 className='font-bold'>Bill Management Portal</h3>
                     <div className='my-5 flex space-x-6'>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
                             <BsTools size={20} />
                             <p className='font-bold'>Technologies</p>
                         </div>
                         <h1>:</h1>
-                        <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
-                            <SiAdobexd size={20} color="#450135" />
-                            <p className='font-bold'>Adobe</p>
-                        </div>
 
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
                             <SiPython size={20} color="#326a96" />
@@ -58,8 +55,8 @@ export default function Home() {
                         </div>
 
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
-                            <SiReact size={20} color="#5ed3f3" />
-                            <p className='font-bold'>React</p>
+                            <SiHtml5 size={20} color="#dd4b25" />
+                            <p className='font-bold'>SiHtml5</p>
                         </div>
 
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
@@ -67,24 +64,19 @@ export default function Home() {
                             <p className='font-bold'>CSS</p>
                         </div>
 
-                        <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
-                            <SiPostgresql size={20} color="#31648c" />
-                            <p className='font-bold'>Postgresql</p>
-                        </div>
-
                     </div>
                     <div className='my-3 mt-10 '>
-                        <p className='leading-8 text-lg'>A portal to enable players find tournaments and be rated from winning games.</p>
-                        <p className='leading-8 text-lg'>When a player loses a game he/she report the results</p>
+                        <p className='leading-8 text-lg'>A portal which provide uploading of sales report from various depots</p>
+                        <p className='leading-8 text-lg'>And shows trends of sales of the depots</p>
                     </div>
-                    <div className='my-8 w-72 flex justify-between'>
-                        <button className='bg-[#304577] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
+                    <div className='my-8 w-80 flex justify-between'>
+                        {/* <button className='bg-[#304577] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
                             <div className='flex items-center justify-between'>
                                 <FaEye />
                                 <p className='ml-2'>Preview</p>
                             </div>
 
-                        </button>
+                        </button> */}
                         <button className='bg-[#D04D30] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
                             <div className='flex items-center justify-between'>
                                 <SiMinutemailer />
@@ -93,23 +85,34 @@ export default function Home() {
 
                         </button>
 
+                        <a href='https://github.com/EarthmanAman/bill' target="_blank" className='bg-[#1a1e22] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
+                            <div className='flex items-center justify-between'>
+                                <SiGithub />
+                                <p className='ml-2'>Download</p>
+                            </div>
+
+                        </a>
 
                     </div>
                 </div>
 
                 <div className='w-full'>
+
                     <Slider {...settings} className=" my-10">
-                        <div className='w-full mr-2 border-2'>
-                            <Image loader={imageLoader} layout='responsive' src={SpadequizMain} alt="hero image" className='rounded-lg' />
+                        <div className='w-full  p-5 mr-2 border-2'>
+                            <Image loader={imageLoader} layout='responsive' src={BillLogin} alt="hero image" className='rounded-lg' />
                         </div>
-                        <div className='w-full mr-2 border-2'>
-                            <Image loader={imageLoader} layout='responsive' src={Admin} alt="hero image" className='rounded-lg' />
+                        <div className='w-full  p-5 mr-2 border-2'>
+                            <Image loader={imageLoader} layout='responsive' src={HomePage} alt="hero image" className='rounded-lg' />
                         </div>
-                        <div className='w-full mr-2 border-2'>
-                            <Image loader={imageLoader} layout='responsive' src={Announcements} alt="hero image" className='rounded-lg' />
+                        <div className='w-full  p-5 mr-2 border-2'>
+                            <Image loader={imageLoader} layout='responsive' src={SubscriptionPage} alt="hero image" className='rounded-lg' />
                         </div>
-                        <div className='w-full mr-2 border-2'>
-                            <Image loader={imageLoader} layout='responsive' src={Report} alt="hero image" className='rounded-lg' />
+                        <div className='w-full  p-5 mr-2 border-2'>
+                            <Image loader={imageLoader} layout='responsive' src={InvoicePage} alt="hero image" className='rounded-lg' />
+                        </div>
+                        <div className='w-full p-5 mr-2 border-2'>
+                            <Image loader={imageLoader} layout='responsive' src={ProfilePage} alt="hero image" className='rounded-lg' />
                         </div>
                     </Slider>
 

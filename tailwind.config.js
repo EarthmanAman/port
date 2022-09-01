@@ -13,8 +13,8 @@ module.exports = {
         "DancingScript": ["Dancing Script"],
         "Montserrat": ["Montserrat"]
       },
-      height: {
-        85: '22rem',
+      width: {
+        90: '26rem',
       },
       height: {
         85: '22rem',
