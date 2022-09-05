@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from "next/link";
 import NavBar from '../components/home/nav'
 import OplScreen from "../public/assets/works/opl_screen.png"
+import OnlineDuka from "../public/assets/works/duka_home.png"
 
 import SpadeQuiz from "../public/assets/works/spadequiz.png"
 import Bill from "../public/assets/works/bill.png"
@@ -69,6 +70,27 @@ export default function Home() {
                             </div>
                         </motion.div>
                     </Link>
+                </motion.div>
+
+                <motion.div variants={fadeIn} className='grid md:grid-cols-2 gap-5 mb-5'>
+                    <Link href="/opl_project">
+                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
+                            <Image loader={imageLoader} src={OnlineDuka} alt="work 1" className='rounded-xl group-hover:opacity-10' />
+                            <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+                                <h2 className='text-[#fafafa]'>Online Duka</h2>
+                            </div>
+                        </motion.div>
+                    </Link>
+
+                    <Link href="/opl_project">
+                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
+                            <Image loader={imageLoader} src={OnlineDuka} alt="work 1" className='rounded-xl group-hover:opacity-10' />
+                            <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+                                <h2 className='text-[#fafafa]'>Online Duka</h2>
+                            </div>
+                        </motion.div>
+                    </Link>
+
                 </motion.div>
 
 
