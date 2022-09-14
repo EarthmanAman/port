@@ -51,13 +51,13 @@ export default function Home() {
         </motion.div>
 
         <motion.div variants={antiStagger} className='flex flex-wrap justify-between items-start'>
-          <motion.div variants={slideInLeftFast} className='w-full flex flex-col justify-start items-start'>
-            <div className="w-full px-5">
-              <h6 className="text-center">BIOGRAPHY</h6>
+          <motion.div variants={slideInLeftFast} className='w-full pb-8 flex flex-col justify-start items-start'>
+            <div className="w-full px-5 text-center">
+              <h6 className="">BIOGRAPHY</h6>
               <p>Work for money and design for love! I'm Hashim, a full stack developer based in Kenya</p>
             </div>
 
-            <div className="w-full px-5">
+            <div className="w-full px-5 text-center">
               <h6 className="text-center">CONTACT</h6>
               <p>Mombasa, Kenya</p>
               <p>contact@hashimathman.com</p>
@@ -65,7 +65,7 @@ export default function Home() {
 
             </div>
 
-            <div className="w-full px-5">
+            <div className="w-full px-5 text-center">
               <h6 className="text-center">SERVICES</h6>
               <p>UI/UX Design</p>
               <p>Backend Development</p>
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div variants={slideInRightFast} className='w-full flex flex-col justify-end items-end text-right lg:flex-1'>
+          <motion.div variants={slideInRightFast} className='w-full flex flex-col justify-center items-center text-center'>
             <div>
               <h6>PROFESSIONAL<br />CERTIFICATIONS</h6>
               <p>Google UI/UX certification</p>
@@ -111,84 +111,84 @@ export default function Home() {
           <div className='text-center mt-8'>
             <h2>Skills</h2>
           </div>
-          <Slider {...settings} className="mx-48 my-3">
+          <Slider {...settings} className="mx-2 my-3">
             <div>
-              <SiAdobexd size={35} color="#450135" />
-              <p className='text-[#45013] mt-1 '>Adobe Xd</p>
+              <SiAdobexd size={25} color="#450135" />
+              <p className='text-[#45013] text-[0.5rem] font-bold mt-1 '>Adobe Xd</p>
             </div>
             <div>
-              <SiFigma size={35} color="#9d56f7" />
-              <p className='text-[#45013] mt-1 '>Figma</p>
+              <SiFigma size={25} color="#9d56f7" />
+              <p className='text-[#45013] text-[0.5rem] font-bold mt-1 '>Figma</p>
             </div>
             <div>
-              <SiPython size={35} color="#326a96" />
-              <p className='mt-1 '>Python</p>
+              <SiPython size={25} color="#326a96" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Python</p>
             </div>
             <div>
-              <DiDjango size={35} color="#092d1f" />
+              <DiDjango size={25} color="#092d1f" />
             </div>
             <div>
-              <SiJavascript size={35} color="#efd81d" />
-              <p className='mt-1 '>Javascript</p>
+              <SiJavascript size={25} color="#efd81d" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Javascript</p>
             </div>
             <div>
-              <SiReact size={35} color="#5ed3f3" />
-              <p className='mt-1 '>React</p>
+              <SiReact size={25} color="#5ed3f3" />
+              <p className='mt-1 text-[0.5rem] font-bold'>React</p>
             </div>
             <div>
-              <TbBrandReactNative size={35} color="#5ed3f3" />
-              <p className='mt-1 '>React Native</p>
+              <TbBrandReactNative size={25} color="#5ed3f3" />
+              <p className='mt-1 text-[0.5rem] font-bold'>React Native</p>
             </div>
             <div>
-              <SiHtml5 size={35} color="#dd4b25" />
-              <p className='mt-1 '>Html</p>
+              <SiHtml5 size={25} color="#dd4b25" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Html</p>
             </div>
             <div>
-              <SiCss3 size={35} color="#254bdd" />
-              <p className='mt-1 '>CSS</p>
+              <SiCss3 size={25} color="#254bdd" />
+              <p className='mt-1 text-[0.5rem] font-bold'>CSS</p>
             </div>
             <div>
-              <SiTailwindcss size={35} color="#36b7f0" />
-              <p className='mt-1 '>Tailwind CSS</p>
-            </div>
-
-            <div>
-              <DiSass size={35} color="#c76494" />
-
+              <SiTailwindcss size={25} color="#36b7f0" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Tailwind CSS</p>
             </div>
 
             <div>
-              <SiAzuredevops size={35} color="#1391f7" />
-              <p className='mt-1 '>Devops</p>
-            </div>
-            <div>
-              <SiDocker size={35} color="#00a5d3" />
-              <p className='mt-1 '>Docker</p>
-            </div>
-            <div>
-              <SiKubernetes size={35} color="#306adf" />
-              <p className='mt-1 '>Kubernetes</p>
-            </div>
-            <div>
-              <SiGithub size={35} color="#1a1e22" />
-              <p className='mt-1 '>Github</p>
-            </div>
-            <div>
-              <SiPostgresql size={35} color="#31648c" />
-              <p className='mt-1 '>Postgresql</p>
-            </div>
-            <div>
-              <SiMysql size={35} color="#005e88" />
-              <p className='mt-1 '>Mysql</p>
+              <DiSass size={25} color="#c76494" />
+
             </div>
 
             <div>
-              <SiSolidity size={35} color="#363636" />
-              <p className='mt-1 '>Solidity</p>
+              <SiAzuredevops size={25} color="#1391f7" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Devops</p>
             </div>
             <div>
-              <SiEthereum size={35} color="#5b6087" />
-              <p className='mt-1 '>Ethereum</p>
+              <SiDocker size={25} color="#00a5d3" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Docker</p>
+            </div>
+            <div>
+              <SiKubernetes size={25} color="#306adf" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Kubernetes</p>
+            </div>
+            <div>
+              <SiGithub size={25} color="#1a1e22" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Github</p>
+            </div>
+            <div>
+              <SiPostgresql size={25} color="#31648c" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Postgresql</p>
+            </div>
+            <div>
+              <SiMysql size={25} color="#005e88" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Mysql</p>
+            </div>
+
+            <div>
+              <SiSolidity size={25} color="#363636" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Solidity</p>
+            </div>
+            <div>
+              <SiEthereum size={25} color="#5b6087" />
+              <p className='mt-1 text-[0.5rem] font-bold'>Ethereum</p>
             </div>
 
           </Slider>
