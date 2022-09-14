@@ -50,9 +50,9 @@ export default function Home() {
                     <h3>UI/UX Design, Backend, Frontend or Both </h3>
                 </motion.div>
 
-                <motion.div variants={fadeIn} className='grid grid-cols-2 md:grid-cols-3 gap-2 mb-5'>
+                <motion.div variants={fadeIn} className='mx-5 grid grid-cols-2 md:grid-cols-3 gap-2 mb-5'>
                     <Link href="/opl_project" >
-                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
+                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer border-[0.02rem] p-1 border-[#6a0dad]'>
                             <Image loader={imageLoader} src={OplScreen} alt="work 1" className='rounded-md group-hover:opacity-10' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                                 <h2 className='text-[#fafafa]'>OPL Dashboard</h2>
@@ -60,7 +60,7 @@ export default function Home() {
                         </motion.div>
                     </Link>
                     <Link href="/spadequiz">
-                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
+                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer border-[0.02rem] p-1 border-[#6a0dad]'>
                             <Image loader={imageLoader} src={SpadeQuiz} alt="work 1" className='rounded-md group-hover:opacity-10 w-full h-auto' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                                 <h2 className='text-[#fafafa]'>SpadeQuiz</h2>
@@ -68,7 +68,7 @@ export default function Home() {
                         </motion.div>
                     </Link>
                     <Link href="/bill">
-                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
+                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer border-[0.02rem] p-1 border-[#6a0dad]'>
                             <Image loader={imageLoader} src={Bill} alt="work 1" className='rounded-md group-hover:opacity-10' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                                 <h2 className='text-[#fafafa]'>Bill Management</h2>
@@ -79,7 +79,7 @@ export default function Home() {
 
                 <motion.div variants={fadeIn} className='grid md:grid-cols-2 gap-5 mb-5'> */}
                     <Link href="/opl_project">
-                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
+                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer border-[0.02rem] p-1 border-[#6a0dad]'>
                             <Image loader={imageLoader} src={OnlineDuka} alt="work 1" className='rounded-md group-hover:opacity-10' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                                 <h2 className='text-[#fafafa]'>Online Duka</h2>
@@ -88,7 +88,7 @@ export default function Home() {
                     </Link>
 
                     <Link href="/opl_project">
-                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer'>
+                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer border-[0.02rem] p-1 border-[#6a0dad]'>
                             <Image loader={imageLoader} src={OnlineDuka} alt="work 1" className='rounded-md group-hover:opacity-10' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                                 <h2 className='text-[#fafafa]'>Online Duka</h2>
