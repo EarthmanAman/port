@@ -42,8 +42,8 @@ export default function Home() {
         <NavBar />
         <motion.div variants={fadeIn} className='w-full text-center my-10 mt-5 tracking-widest'>
 
-          <motion.h1 className="text-xl mb-1 tracking-[0.2rem]">Hashim Athman</motion.h1>
-          <motion.h1 className="mb-1">Software Developer/Admin</motion.h1>
+          <motion.h1 className="text-[1.5rem] mb-1 tracking-[0.2rem]">Hashim Athman</motion.h1>
+          <motion.h1 className="text-[1.2rem] mb-1">Software Developer/Admin</motion.h1>
           <motion.div>
             <h2>My work is always a <span className="text-[#f60961]">Wooow</span></h2>
 
@@ -74,8 +74,8 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div variants={fadeIn} className='w-full relative -top-2 order-first lg:flex-1'>
-            <div className='h-85 relative p-10 border-solid border-2 rounded-full'>
+          <motion.div variants={fadeIn} className='w-full relative -top-2 order-first px-3'>
+            <div className='h-64 relative p-10 border-solid border-2 rounded-full'>
               <div className='h-full p-5 border-solid border-2 rounded-full bg-[#B7C6C9] relative'>
                 {/* <Image className='absolute bottom-0' src="/../public/assets/pict.png" width="900" height="700" alt="picture" /> */}
               </div>
