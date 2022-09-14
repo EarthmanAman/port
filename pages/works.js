@@ -99,11 +99,11 @@ export default function Home() {
                 </motion.div>
 
 
-                <motion.div variants={fadeIn} className='border-solid border-t-2 border-[#16151] mt-20 py-20 px-10 lg:px-36 text-center'>
+                <motion.div variants={fadeIn} className='w-full border-solid border-t-2 border-[#16151] mt-10 py-10 px-10 lg:px-36 text-center'>
 
-                    <Slider {...settings} className="">
+                    <Slider {...settings} className="w-full">
                         <div>
-                            <div className='relative'>
+                            <div className='w-full relative'>
                                 <span className='absolute left-0 top-0'><RiDoubleQuotesL /></span>
                                 <p className='text-xl lg:text-2xl px-3'>
 
