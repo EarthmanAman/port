@@ -9,23 +9,23 @@ import Logo from '../../public/assets/logo.ico'
 const imageLoader = require("../../loader");
 export default function NavBar() {
     return (
-        <motion.div variants={slideInFromTop} className='flex flex-wrap justify-between items-center'>
-            <div className='w-full mb-3'>
-                <ul className='flex items-center justify-center'>
+        <motion.div variants={slideInFromTop} className='flex flex-wrap justify-between items-center px-16'>
+            <div className='w-full mb-3 md:flex-1 lg:order-first'>
+                <ul className='flex items-center justify-center md:justify-start'>
 
-                    <li className='mr-3 text-[0.9rem] border-b-2 border-[#f60961] font-bold'>
+                    <li className='mr-5 md:mr-10 text-[0.8rem] border-b-2 border-[#f60961] font-bold'>
                         <Link href="/">
                             HOME
                         </Link>
                     </li>
 
-                    <li className='mr-3 text-[0.9rem] border-b-2 font-bold'>
+                    <li className='mr-5 lg:mr-10 text-[0.9rem] border-b-2 font-bold'>
                         <Link href="/works">
                             WORKS
                         </Link>
                     </li>
 
-                    <li className='mr-3 text-[0.9rem] border-b-2 font-bold'>
+                    <li className='mr-5 lg:mr-10 text-[0.9rem] border-b-2 font-bold'>
                         <Link href="/about">
                             ABOUT
                         </Link>
@@ -40,12 +40,12 @@ export default function NavBar() {
                 </ul>
             </div>
 
-            <div className='w-full flex justify-center order-first mb-3'>
+            <div className='w-full flex justify-center order-first mb-3 lg:flex-1'>
                 <Image loader={imageLoader} src={Logo} width="50" height="50" alt="logo" />
             </div>
 
-            <div className='w-full'>
-                <div className='flex justify-center'>
+            <div className='w-full md:flex-1'>
+                <div className='flex justify-center md:justify-end'>
                     <div className=''>
                         <a href='https://github.com/EarthmanAman' target="_blank">
                             <FaGithub size={14} color="#1a1e22" />

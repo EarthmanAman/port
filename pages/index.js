@@ -40,12 +40,12 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
       </Head>
 
-      <motion.div variants={stagger} className='h-screen px-12 py-1'>
+      <motion.div variants={stagger} className='h-screen px-12 py-1 md:px-24'>
         <NavBar />
         <motion.div variants={fadeIn} className='w-full text-center my-10 mt-5 tracking-widest'>
 
-          <motion.h1 className="text-[1.5rem] mb-1 tracking-[0.2rem]">Hashim Athman</motion.h1>
-          <motion.h1 className="text-[1.2rem] mb-1">Software Developer/Admin</motion.h1>
+          <motion.h1 className="text-[1.5rem] mb-1 tracking-[0.2rem] md:text-[2rem] md:mb-1.5 md:tracking-[0.3rem]">Hashim Athman</motion.h1>
+          <motion.h1 className="text-[1rem] mb-1 tracking-[0.1rem] md:text-[1.8rem] md:mb-1.5 md:tracking-[0.15rem]">Software Developer/Admin</motion.h1>
           <motion.div>
             <h2>My work is always a <span className="text-[#f60961]">Wooow</span></h2>
 
@@ -53,25 +53,25 @@ export default function Home() {
         </motion.div>
 
         <motion.div variants={antiStagger} className='flex flex-wrap justify-between items-start'>
-          <motion.div variants={slideInLeftFast} className='w-full pb-8 flex flex-col justify-start items-start'>
-            <div className="px-20">
+          <motion.div variants={slideInLeftFast} className='w-full pb-8 flex flex-1 flex-col justify-start items-start text-center md:text-left lg:order-first'>
+            <div className="px-20 md:hidden">
                 <Image loader={imageLoader} src={Flower} alt="divider" />
             </div>
-            <div className="w-full px-5 text-center">
+            <div className="w-full px-5">
               <h6 className="">BIOGRAPHY</h6>
               <p>Work for money and design for love! I'm Hashim, a full stack developer based in Kenya</p>
             </div>
 
-            <div className="w-full px-5 text-center">
-              <h6 className="text-center">CONTACT</h6>
+            <div className="w-full px-5">
+              <h6>CONTACT</h6>
               <p>Mombasa, Kenya</p>
               <p>contact@hashimathman.com</p>
               <p>+254 70146 7872</p>
 
             </div>
 
-            <div className="w-full px-5 text-center">
-              <h6 className="text-center">SERVICES</h6>
+            <div className="w-full px-5">
+              <h6>SERVICES</h6>
               <p>UI/UX Design</p>
               <p>Backend Development</p>
               <p>Frontend Development</p>
@@ -79,34 +79,38 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div variants={fadeIn} className='w-full relative -top-2 order-first px-3 mb-3'>
-            <div className='h-64 relative p-7 border-solid border-2 rounded-full'>
+          <motion.div variants={fadeIn} className='w-full relative -top-2 order-first px-3 mb-3 flex flex-col items-center lg:flex-1'>
+            <div className='h-64 w-full relative p-7 border-solid border-2 rounded-full md:h-85 md:w-96'>
               <div className='h-full p-5 border-solid border-2 rounded-full bg-[#B7C6C9] relative'>
                 {/* <Image className='absolute bottom-0' src="/../public/assets/pict.png" width="900" height="700" alt="picture" /> */}
               </div>
 
             </div>
-          </motion.div>
 
-          <motion.div variants={slideInRightFast} className='w-full pb-8 flex flex-col justify-center items-center text-center'>
-            <div className="px-20">
+            <div className="px-48 hidden md:block lg:hidden">
                 <Image loader={imageLoader} src={Flower} alt="divider" />
             </div>
-            <div>
+          </motion.div>
+
+          <motion.div variants={slideInRightFast} className='w-full pb-8 flex flex-1 flex-col justify-center items-center text-center md:text-right'>
+            <div className="px-20 md:hidden">
+                <Image loader={imageLoader} src={Flower} alt="divider" />
+            </div>
+            <div className="w-full">
               <h6>PROFESSIONAL<br />CERTIFICATIONS</h6>
               <p>Google UI/UX certification</p>
               <p>Google Project Management certification</p>
               <p>Google IT Support certification</p>
             </div>
 
-            <div>
+            <div className="w-full">
               <h6><br />OTHER CERTIFICATIONS</h6>
               <p className='mb-2'>Advanced CSS and Sass: Flexbox, Grid, Animations</p>
               <p>Ethereum and Solidity: The Complete Developer’s
                 Guide</p>
             </div>
 
-            <div>
+            <div className="w-full">
               <h6>PROJECTS DONE</h6>
               <h2>10</h2>
             </div>
@@ -115,14 +119,14 @@ export default function Home() {
 
 
         </motion.div>
-        <motion.div variants={slideInFromBottom} className="pb-20">
-          <div className="px-20">
+        <motion.div variants={slideInFromBottom} className="pb-20 items-center">
+          <div className="px-20 md:px-48 lg:px-[30rem]">
                 <Image loader={imageLoader} src={Flower} alt="divider" />
             </div>
           <div className='text-center mt-2'>
             <h2>Skills</h2>
           </div>
-          <Slider {...settings} className="mx-2 my-3">
+          <Slider {...settings} className="mx-2 my-3 md:mx-48 lg:mx-56">
             <div>
               <SiAdobexd size={25} color="#450135" />
               <p className='text-[#45013] text-[0.5rem] font-bold mt-1 '>Adobe Xd</p>
