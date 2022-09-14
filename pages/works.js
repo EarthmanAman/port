@@ -37,17 +37,17 @@ export default function Home() {
                 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
             </Head>
 
-            <motion.div variants={stagger} className='h-screen px-4 lg:px-28 py-1'>
+            <motion.div variants={stagger} className='h-screen w-full px-4 lg:px-28 py-1'>
                 <NavBar />
 
                 <div className="px-28 md:px-48 lg:px-[30rem]">
-                <Image loader={imageLoader} src={Flower} alt="divider" />
-            </div>
+                    <Image loader={imageLoader} src={Flower} alt="divider" />
+                </div>
 
                 <motion.div variants={fadeIn} className='m-5 mt-0 lg:m-10'>
                     <h3>Hello good people <span className='text-lg'>&#128075;</span></h3>
-                    <h3>Each work has an indicator describing its category as</h3>
-                    <h3>UI/UX Design, Backend, Frontend or Both </h3>
+                    <h3>Below are some of my work. Open them to see magic <span className='text-lg'>&#10024; &#128586;</span></h3>
+                    {/* <h3>UI/UX Design, Backend, Frontend or Both </h3> */}
                 </motion.div>
 
                 <motion.div variants={fadeIn} className='mx-5 grid grid-cols-2 md:grid-cols-3 gap-2 mb-5'>
