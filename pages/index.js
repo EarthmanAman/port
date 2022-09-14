@@ -51,22 +51,22 @@ export default function Home() {
         </motion.div>
 
         <motion.div variants={antiStagger} className='flex flex-wrap justify-between items-start'>
-          <motion.div variants={slideInLeftFast} className='w-full flex flex-col justify-start items-start pr-20 lg:order-first lg:flex-1'>
-            <div>
-              <h6>BIOGRAPHY</h6>
+          <motion.div variants={slideInLeftFast} className='w-full flex flex-col justify-start items-start'>
+            <div className="w-full px-5">
+              <h6 className="text-center">BIOGRAPHY</h6>
               <p>Work for money and design for love! I'm Hashim, a full stack developer based in Kenya</p>
             </div>
 
-            <div>
-              <h6>CONTACT</h6>
+            <div className="w-full px-5">
+              <h6 className="text-center">CONTACT</h6>
               <p>Mombasa, Kenya</p>
               <p>contact@hashimathman.com</p>
               <p>+254 70146 7872</p>
 
             </div>
 
-            <div>
-              <h6>SERVICES</h6>
+            <div className="w-full px-5">
+              <h6 className="text-center">SERVICES</h6>
               <p>UI/UX Design</p>
               <p>Backend Development</p>
               <p>Frontend Development</p>
@@ -74,8 +74,8 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div variants={fadeIn} className='w-full relative -top-2 order-first px-3'>
-            <div className='h-64 relative p-10 border-solid border-2 rounded-full'>
+          <motion.div variants={fadeIn} className='w-full relative -top-2 order-first px-3 mb-3'>
+            <div className='h-64 relative p-7 border-solid border-2 rounded-full'>
               <div className='h-full p-5 border-solid border-2 rounded-full bg-[#B7C6C9] relative'>
                 {/* <Image className='absolute bottom-0' src="/../public/assets/pict.png" width="900" height="700" alt="picture" /> */}
               </div>
