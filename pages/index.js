@@ -15,6 +15,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { fadeIn, slideInLeftFast, slideInRightFast, slideInFromBottom, stagger, antiStagger } from '../components/animations'
 
+import Flower from "../public/assets/flower.png"
+
 const imageLoader = require("../loader");
 
 export default function Home() {
@@ -52,6 +54,9 @@ export default function Home() {
 
         <motion.div variants={antiStagger} className='flex flex-wrap justify-between items-start'>
           <motion.div variants={slideInLeftFast} className='w-full pb-8 flex flex-col justify-start items-start'>
+            <div className="px-20">
+                <Image loader={imageLoader} src={Flower} alt="divider" />
+            </div>
             <div className="w-full px-5 text-center">
               <h6 className="">BIOGRAPHY</h6>
               <p>Work for money and design for love! I'm Hashim, a full stack developer based in Kenya</p>
@@ -83,7 +88,10 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div variants={slideInRightFast} className='w-full flex flex-col justify-center items-center text-center'>
+          <motion.div variants={slideInRightFast} className='w-full pb-8 flex flex-col justify-center items-center text-center'>
+            <div className="px-20">
+                <Image loader={imageLoader} src={Flower} alt="divider" />
+            </div>
             <div>
               <h6>PROFESSIONAL<br />CERTIFICATIONS</h6>
               <p>Google UI/UX certification</p>
@@ -107,8 +115,11 @@ export default function Home() {
 
 
         </motion.div>
-        <motion.div variants={slideInFromBottom}>
-          <div className='text-center mt-8'>
+        <motion.div variants={slideInFromBottom} className="pb-20">
+          <div className="px-20">
+                <Image loader={imageLoader} src={Flower} alt="divider" />
+            </div>
+          <div className='text-center mt-2'>
             <h2>Skills</h2>
           </div>
           <Slider {...settings} className="mx-2 my-3">
