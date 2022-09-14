@@ -14,6 +14,9 @@ import Slider from 'react-slick';
 import Footer from '../components/footer';
 import { fadeIn, stagger } from '../components/animations';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const imageLoader = require("../loader");
 
 export default function Home() {
