@@ -16,13 +16,13 @@
     }
 
     /* prettier-ignore */
-    h1 {
+    /* h1 {
         @apply text-2xl mb-1 tracking-[0.4rem]
-    }
+    } */
 
     /* prettier-ignore */
     h2 {
-        @apply text-xl font-DancingScript font-extrabold
+        @apply text-sm font-DancingScript font-extrabold
     }
 
     h3 {

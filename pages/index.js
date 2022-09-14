@@ -38,20 +38,20 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
       </Head>
 
-      <motion.div variants={stagger} className='h-screen px-28 py-1'>
+      <motion.div variants={stagger} className='h-screen px-12 py-1'>
         <NavBar />
-        <motion.div variants={fadeIn} className='w-full text-center my-8 mt-3 tracking-widest'>
+        <motion.div variants={fadeIn} className='w-full text-center my-10 mt-5 tracking-widest'>
 
-          <motion.h1>Hashim Athman</motion.h1>
-          <motion.h1>Software Developer/Admin</motion.h1>
+          <motion.h1 className="text-xl mb-1 tracking-[0.2rem]">Hashim Athman</motion.h1>
+          <motion.h1 className="mb-1">Software Developer/Admin</motion.h1>
           <motion.div>
             <h2>My work is always a <span className="text-[#f60961]">Wooow</span></h2>
 
           </motion.div>
         </motion.div>
 
-        <motion.div variants={antiStagger} className='flex justify-between items-start'>
-          <motion.div variants={slideInLeftFast} className='w-full flex flex-col justify-start items-start pr-20'>
+        <motion.div variants={antiStagger} className='flex flex-wrap justify-between items-start'>
+          <motion.div variants={slideInLeftFast} className='w-full flex flex-col justify-start items-start pr-20 lg:order-first lg:flex-1'>
             <div>
               <h6>BIOGRAPHY</h6>
               <p>Work for money and design for love! I'm Hashim, a full stack developer based in Kenya</p>
@@ -74,7 +74,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div variants={fadeIn} className='w-full relative -top-2'>
+          <motion.div variants={fadeIn} className='w-full relative -top-2 order-first lg:flex-1'>
             <div className='h-85 relative p-10 border-solid border-2 rounded-full'>
               <div className='h-full p-5 border-solid border-2 rounded-full bg-[#B7C6C9] relative'>
                 {/* <Image className='absolute bottom-0' src="/../public/assets/pict.png" width="900" height="700" alt="picture" /> */}
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <motion.div variants={slideInRightFast} className='w-full flex flex-col justify-end items-end text-right'>
+          <motion.div variants={slideInRightFast} className='w-full flex flex-col justify-end items-end text-right lg:flex-1'>
             <div>
               <h6>PROFESSIONAL<br />CERTIFICATIONS</h6>
               <p>Google UI/UX certification</p>
