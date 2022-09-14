@@ -13,19 +13,19 @@ export default function NavBar() {
             <div className='w-full mb-3'>
                 <ul className='flex items-center justify-center'>
 
-                    <li className='mr-3 text-[0.9rem] font-bold'>
-                        <Link href="/" >
+                    <li className='mr-3 text-[0.9rem] border-b-2 border-[#f60961] font-bold'>
+                        <Link href="/">
                             HOME
                         </Link>
                     </li>
 
-                    <li className='mr-3 text-[0.9rem] font-bold'>
+                    <li className='mr-3 text-[0.9rem] border-b-2 font-bold'>
                         <Link href="/works">
                             WORKS
                         </Link>
                     </li>
 
-                    <li className='mr-3 text-[0.9rem] font-bold'>
+                    <li className='mr-3 text-[0.9rem] border-b-2 font-bold'>
                         <Link href="/about">
                             ABOUT
                         </Link>
