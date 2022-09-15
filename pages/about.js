@@ -6,6 +6,7 @@ import Footer from '../components/footer';
 import Header from '../components/head';
 import NavBar from '../components/home/nav';
 import Profile from '../public/assets/pic.jpg'
+import Collage from '../public/assets/c1.jpg'
 
 const imageLoader = require("../loader");
 
@@ -15,7 +16,7 @@ export default function Home() {
         <div>
             <Header />
 
-            <div className='px-10 lg:px-28 py-1'>
+            <div className='h-screen px-10 lg:px-28 py-1'>
                 <NavBar />
                 <div className='flex flex-wrap'>
                     <div className='px-5 py-15 lg:px-10 lg:py-20 md:order-first md:flex-1'>
@@ -27,8 +28,8 @@ export default function Home() {
                             it’s through simplifying one interaction or giving users an opportunity to view things through a new lens, I love working on projects that make people happy. At any scale. In the past few years,
                             I’ve found myself in language learning, motion media, visual design, front-end, and smart education.</p>
                     </div>
-                    <div className='p-8 order-first lg:p-16 md:flex-1'>
-                        <Image loader={imageLoader} src={Profile} alt="profile pic" className='rounded-lg' />
+                    <div className='p-8 order-first lg:p-16 md:flex-1 h-96 overflow-hidden'>
+                        <Image loader={imageLoader} src={Collage} alt="profile pic" className='rounded-lg' />
                     </div>
                 </div>
 
