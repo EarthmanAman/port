@@ -46,14 +46,14 @@ export default function Home() {
         <div>
             <Header />
 
-            <div className=' px-8 lg:px-28 py-1'>
+            <div className=' px-8 md:px-20 lg:px-28 py-1'>
                 <NavBar />
 
                 <div className='my-5'>
-                    <div className="px-28 md:px-48 lg:px-[30rem]">
+                    <div className="px-28 md:px-56 lg:px-[30rem]">
                         <Image loader={imageLoader} src={Flower} alt="divider" />
                     </div>
-                    <h3 className='font-bold text-lg text-center lg:text-left'>OPL Daily Reporting & BI Tool</h3>
+                    <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center lg:text-left'>OPL Daily Reporting & BI Tool</h3>
 
 
 
@@ -110,7 +110,7 @@ export default function Home() {
                 </div>
 
                 <div className='w-full'>
-                    <div className='hidden md:block lg:block'>
+                    <div className='hidden md:hidden lg:block'>
                         <Slider {...settings} className=" my-10">
                             <div className='w-full mr-2 border-2'>
                                 <Image loader={imageLoader} layout='responsive' src={OplScreen} alt="hero image" className='rounded-lg' />
@@ -127,7 +127,7 @@ export default function Home() {
                         </Slider>
                     </div>
 
-                    <div className='md:hidden lg:hidden'>
+                    <div className='lg:hidden'>
                         <Slider {...settings2} className="my-10 ">
                             <div className='w-full   mr-2 border-2'>
                                 <Image loader={imageLoader} layout='responsive' src={OplScreen} alt="hero image" className='rounded-lg' />
