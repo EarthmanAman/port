@@ -62,7 +62,9 @@ export default function Home() {
                             id="myId"
                             className="myClassname"
                             display="initial"
-                            position="relative" />
+                            position="relative"
+                            allowFullScreen={true}
+                        />
                     </div>
 
                     <div className='w-full h-full md:flex-1'>
@@ -73,7 +75,9 @@ export default function Home() {
                             id="myId"
                             className="myClassname"
                             display="initial"
-                            position="relative" />
+                            position="relative"
+                            allowFullScreen={true}
+                        />
                     </div>
 
                     <div className='w-full h-full md:flex-1'>
@@ -84,7 +88,9 @@ export default function Home() {
                             id="myId"
                             className="myClassname"
                             display="initial"
-                            position="relative" />
+                            position="relative"
+                            allowFullScreen={true}
+                        />
                     </div>
 
                 </div>
