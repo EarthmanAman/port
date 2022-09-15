@@ -59,7 +59,7 @@ export default function Home() {
 
                     <div className='my-5 flex flex-wrap space-x-2 space-y-2'>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
-                            <BsTools size={18} />
+                            <BsTools size={14} />
                             <p className='font-bold'>Technologies</p>
                         </div>
                         <h1>:</h1>
