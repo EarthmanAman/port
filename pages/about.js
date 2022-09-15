@@ -16,9 +16,9 @@ export default function Home() {
         <div>
             <Header />
 
-            <div className='h-screen px-6 lg:px-28 py-1'>
+            <div className='h-screen px-6 md:px-16 lg:px-28 py-1'>
                 <NavBar />
-                <div className='flex flex-wrap'>
+                <div className='flex flex-wrap md:mt-10 lg:mt-0'>
                     <div className='px-5 py-15 lg:px-10 lg:py-20 md:order-first md:flex-1'>
                         <div className='mb-5 lg:mb-10'>
                             <h5>Hello good people! <span className='text-lg'>&#128075;</span> !</h5>
@@ -28,7 +28,7 @@ export default function Home() {
                             it’s through simplifying one interaction or giving users an opportunity to view things through a new lens, I love working on projects that make people happy. At any scale. In the past few years,
                             I’ve found myself in language learning, motion media, visual design, front-end, and smart education.</p>
                     </div>
-                    <div className='p-8 order-first lg:p-16 md:flex-1 h-96 overflow-hidden'>
+                    <div className='p-8 order-first lg:p-16 md:flex-1 md:h-80 lg:h-96 overflow-hidden'>
                         <Image loader={imageLoader} src={Collage} alt="profile pic" className='rounded-lg' />
                     </div>
                 </div>
@@ -88,7 +88,10 @@ export default function Home() {
                     </div>
 
                 </div>
-                <Footer />
+
+                <div className='relative mt-96 md:mt-0 lg:mt-0'>
+                    <Footer />
+                </div>
             </div>
 
 
