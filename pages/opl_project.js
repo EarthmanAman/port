@@ -92,14 +92,14 @@ export default function Home() {
                         <p className='leading-8 text-sm'>And shows trends of sales of the depots</p>
                     </div>
                     <div className='my-5 w-72 flex justify-between'>
-                        <button className='bg-[#304577] py-1.5 px-3 rounded-md shadow-md shadow-gray-400 text-white'>
+                        <button className='bg-[#304577] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
                             <div className='flex items-center justify-between'>
                                 <FaEye />
                                 <p className='ml-2'>Preview</p>
                             </div>
 
                         </button>
-                        <button className='bg-[#D04D30] py-1.5 px-3 rounded-md shadow-md shadow-gray-400 text-white'>
+                        <button className='bg-[#D04D30] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
                             <div className='flex items-center justify-between'>
                                 <SiMinutemailer />
                                 <p className='ml-2'>Request Demo</p>
@@ -112,16 +112,16 @@ export default function Home() {
                 <div className='w-full'>
                     <div className='hidden md:block lg:block'>
                         <Slider {...settings} className=" my-10">
-                            <div className='w-full  p-2 mr-2 border-2'>
+                            <div className='w-full mr-2 border-2'>
                                 <Image loader={imageLoader} layout='responsive' src={OplScreen} alt="hero image" className='rounded-lg' />
                             </div>
-                            <div className='w-full  p-2 mr-2 border-2'>
+                            <div className='w-full  mr-2 border-2'>
                                 <Image loader={imageLoader} layout='responsive' src={OplGraphs} alt="hero image" className='rounded-lg' />
                             </div>
-                            <div className='w-full  p-2 mr-2 border-2'>
+                            <div className='w-full   mr-2 border-2'>
                                 <Image loader={imageLoader} layout='responsive' src={OplSales} alt="hero image" className='rounded-lg' />
                             </div>
-                            <div className='w-full p-2 mr-2 border-2'>
+                            <div className='w-full  mr-2 border-2'>
                                 <Image loader={imageLoader} layout='responsive' src={Customer} alt="hero image" className='rounded-lg' />
                             </div>
                         </Slider>
@@ -129,16 +129,16 @@ export default function Home() {
 
                     <div className='md:hidden lg:hidden'>
                         <Slider {...settings2} className="my-10 ">
-                            <div className='w-full  p-5 mr-2 border-2'>
+                            <div className='w-full   mr-2 border-2'>
                                 <Image loader={imageLoader} layout='responsive' src={OplScreen} alt="hero image" className='rounded-lg' />
                             </div>
-                            <div className='w-full  p-5 mr-2 border-2'>
+                            <div className='w-full   mr-2 border-2'>
                                 <Image loader={imageLoader} layout='responsive' src={OplGraphs} alt="hero image" className='rounded-lg' />
                             </div>
-                            <div className='w-full  p-5 mr-2 border-2'>
+                            <div className='w-full   mr-2 border-2'>
                                 <Image loader={imageLoader} layout='responsive' src={OplSales} alt="hero image" className='rounded-lg' />
                             </div>
-                            <div className='w-full p-5 mr-2 border-2'>
+                            <div className='w-full  mr-2 border-2'>
                                 <Image loader={imageLoader} layout='responsive' src={Customer} alt="hero image" className='rounded-lg' />
                             </div>
                         </Slider>
