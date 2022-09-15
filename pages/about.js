@@ -16,7 +16,7 @@ export default function Home() {
         <div>
             <Header />
 
-            <div className='h-screen px-10 lg:px-28 py-1'>
+            <div className='h-screen px-6 lg:px-28 py-1'>
                 <NavBar />
                 <div className='flex flex-wrap'>
                     <div className='px-5 py-15 lg:px-10 lg:py-20 md:order-first md:flex-1'>
