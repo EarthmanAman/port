@@ -30,49 +30,59 @@ export default function Home() {
         autoplay: true,
         autoplaySpeed: 5000,
     };
+
+    const settings2 = {
+        dots: true,
+        infinite: true,
+        speed: 5000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+    };
     return (
         <div>
             <Header />
 
-            <div className=' px-28 py-1'>
+            <div className=' px-8 lg:px-28 py-1'>
                 <NavBar />
                 <div className='my-10'>
-                    <h3 className='font-bold'>OPL Daily Reporting & BI Tool</h3>
-                    <div className='my-5 flex space-x-6'>
+                    <h3 className='font-bold text-center lg:text-left'>OPL Daily Reporting & BI Tool</h3>
+                    <div className='my-5 flex flex-wrap space-x-2'>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
-                            <BsTools size={20} />
+                            <BsTools size={18} />
                             <p className='font-bold'>Technologies</p>
                         </div>
                         <h1>:</h1>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
-                            <SiAdobexd size={20} color="#450135" />
+                            <SiAdobexd size={18} color="#450135" />
                             <p className='font-bold'>Adobe</p>
                         </div>
 
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
-                            <SiPython size={20} color="#326a96" />
+                            <SiPython size={18} color="#326a96" />
                             <p className='font-bold'>Python</p>
                         </div>
 
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
-                            <DiDjango size={20} color="#092d1f" />
+                            <DiDjango size={18} color="#092d1f" />
                         </div>
 
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
-                            <SiReact size={20} color="#5ed3f3" />
+                            <SiReact size={18} color="#5ed3f3" />
                             <p className='font-bold'>React</p>
                         </div>
 
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
-                            <DiSass size={20} color="#c76494" />
+                            <DiSass size={18} color="#c76494" />
                         </div>
 
                     </div>
-                    <div className='my-3 mt-10 '>
+                    <div className='my-3 mt-7 px-2'>
                         <p className='leading-8 text-lg'>A portal which provide uploading of sales report from various depots</p>
                         <p className='leading-8 text-lg'>And shows trends of sales of the depots</p>
                     </div>
-                    <div className='my-8 w-72 flex justify-between'>
+                    <div className='my-5 w-72 flex justify-between'>
                         <button className='bg-[#304577] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
                             <div className='flex items-center justify-between'>
                                 <FaEye />
@@ -91,21 +101,40 @@ export default function Home() {
                 </div>
 
                 <div className='w-full'>
+                    <div className='hidden md:block lg:block'>
+                        <Slider {...settings} className=" my-10">
+                            <div className='w-full  p-5 mr-2 border-2'>
+                                <Image loader={imageLoader} layout='responsive' src={OplScreen} alt="hero image" className='rounded-lg' />
+                            </div>
+                            <div className='w-full  p-5 mr-2 border-2'>
+                                <Image loader={imageLoader} layout='responsive' src={OplGraphs} alt="hero image" className='rounded-lg' />
+                            </div>
+                            <div className='w-full  p-5 mr-2 border-2'>
+                                <Image loader={imageLoader} layout='responsive' src={OplSales} alt="hero image" className='rounded-lg' />
+                            </div>
+                            <div className='w-full p-5 mr-2 border-2'>
+                                <Image loader={imageLoader} layout='responsive' src={Customer} alt="hero image" className='rounded-lg' />
+                            </div>
+                        </Slider>
+                    </div>
 
-                    <Slider {...settings} className=" my-10">
-                        <div className='w-full  p-5 mr-2 border-2'>
-                            <Image loader={imageLoader} layout='responsive' src={OplScreen} alt="hero image" className='rounded-lg' />
-                        </div>
-                        <div className='w-full  p-5 mr-2 border-2'>
-                            <Image loader={imageLoader} layout='responsive' src={OplGraphs} alt="hero image" className='rounded-lg' />
-                        </div>
-                        <div className='w-full  p-5 mr-2 border-2'>
-                            <Image loader={imageLoader} layout='responsive' src={OplSales} alt="hero image" className='rounded-lg' />
-                        </div>
-                        <div className='w-full p-5 mr-2 border-2'>
-                            <Image loader={imageLoader} layout='responsive' src={Customer} alt="hero image" className='rounded-lg' />
-                        </div>
-                    </Slider>
+                    <div className='md:hidden lg:hidden'>
+                        <Slider {...settings2} className="my-10 ">
+                            <div className='w-full  p-5 mr-2 border-2'>
+                                <Image loader={imageLoader} layout='responsive' src={OplScreen} alt="hero image" className='rounded-lg' />
+                            </div>
+                            <div className='w-full  p-5 mr-2 border-2'>
+                                <Image loader={imageLoader} layout='responsive' src={OplGraphs} alt="hero image" className='rounded-lg' />
+                            </div>
+                            <div className='w-full  p-5 mr-2 border-2'>
+                                <Image loader={imageLoader} layout='responsive' src={OplSales} alt="hero image" className='rounded-lg' />
+                            </div>
+                            <div className='w-full p-5 mr-2 border-2'>
+                                <Image loader={imageLoader} layout='responsive' src={Customer} alt="hero image" className='rounded-lg' />
+                            </div>
+                        </Slider>
+                    </div>
+
 
                     {/* <div className='my-5 flex space-x-6'>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-3 py-2 rounded-md'>
