@@ -3,17 +3,17 @@ import { FaTwitter, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className='w-full flex flex-wrap justify-center items-center p-14 border-solid border-t-2 text-center'>
-            <div className='w-full mb-3'>
+        <footer className='w-full flex flex-wrap justify-center items-center p-14 border-solid border-t-2 text-center lg:justify-between'>
+            <div className='w-full mb-3 lg:flex-1'>
                 <p>&copy; 2022 Hashim Athman. All rights reserved </p>
             </div>
 
-            <div className='w-full mb-3 flex justify-center'>
+            <div className='w-full mb-3 flex justify-center lg:flex-1'>
                 <p>contact@hashimathman.com</p>
             </div>
 
-            <div className='w-full'>
-                <div className='flex justify-center  md:justify-end'>
+            <div className='w-full flex justify-center items-center lg:flex-1'>
+                <div className='flex justify-center  md:justify-end '>
                     <div className='ml-4'>
                         <a href='https://github.com/EarthmanAman' target="_blank">
                             <FaGithub size={15} color="#1a1e22" />

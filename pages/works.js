@@ -47,7 +47,7 @@ export default function Home() {
                     <Image loader={imageLoader} src={Flower} alt="divider" />
                 </div>
 
-                <motion.div variants={fadeIn} className='m-5 mt-0 lg:m-10'>
+                <motion.div variants={fadeIn} className='m-5 mt-0 lg:m-5'>
                     <h3>Hello good people <span className='text-lg'>&#128075;</span></h3>
                     <h3>Below are some of my work. Open them to see magic <span className='text-lg'>&#10024; &#128586;</span></h3>
                     {/* <h3>UI/UX Design, Backend, Frontend or Both </h3> */}
@@ -78,7 +78,7 @@ export default function Home() {
                             </div>
                         </motion.div>
                     </Link>
-                {/* </motion.div>
+                    {/* </motion.div>
 
                 <motion.div variants={fadeIn} className='grid md:grid-cols-2 gap-5 mb-5'> */}
                     <Link href="/opl_project">

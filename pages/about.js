@@ -15,11 +15,11 @@ export default function Home() {
         <div>
             <Header />
 
-            <div className='h-screen px-28 py-1'>
+            <div className='px-10 lg:px-28 py-1'>
                 <NavBar />
-                <div className='flex'>
-                    <div className='px-10 py-20'>
-                        <div className='mb-10'>
+                <div className='flex flex-wrap'>
+                    <div className='px-5 py-15 lg:px-10 lg:py-20 md:order-first md:flex-1'>
+                        <div className='mb-5 lg:mb-10'>
                             <h5>Hello good people! <span className='text-lg'>&#128075;</span> !</h5>
                             <h5>My name is Hashim Athman, a Full Stack Developer based in Kenya.</h5>
                         </div>
@@ -27,22 +27,22 @@ export default function Home() {
                             it’s through simplifying one interaction or giving users an opportunity to view things through a new lens, I love working on projects that make people happy. At any scale. In the past few years,
                             I’ve found myself in language learning, motion media, visual design, front-end, and smart education.</p>
                     </div>
-                    <div className='p-16'>
+                    <div className='p-8 order-first lg:p-16 md:flex-1'>
                         <Image loader={imageLoader} src={Profile} alt="profile pic" className='rounded-lg' />
                     </div>
                 </div>
 
-                <div className='flex space-x-4 py-12 border-solid border-y-2'>
-                    <div>
+                <div className='w-full flex flex-wrap space-x-1 md:space-x-4 py-12 border-solid border-y-2 mt-5'>
+                    <div className='w-[48%] ml-1 md:flex-1'>
                         <Image loader={imageLoader} src={Profile} alt="pic 1" />
                     </div>
-                    <div>
+                    <div className='w-[48%] md:flex-1'>
                         <Image loader={imageLoader} src={Profile} alt="pic 1" />
                     </div>
-                    <div>
+                    <div className='w-[48%] md:flex-1'>
                         <Image loader={imageLoader} src={Profile} alt="pic 1" />
                     </div>
-                    <div>
+                    <div className='w-[48%] md:flex-1'>
                         <Image loader={imageLoader} src={Profile} alt="pic 1" />
                     </div>
                 </div>
@@ -51,78 +51,41 @@ export default function Home() {
                     <h5>Plus, here are some things that inspire me.</h5>
                 </div>
 
-                <div className='mb-14'>
-                    <div className='flex space-x-7 w-full h-60 mb-5'>
-                        <div className='w-full h-full'>
-                            <Iframe
-                                url="https://www.youtube.com/embed/54ZCz8mc7jE"
-                                width='100%'
-                                height='100%'
-                                id="myId"
-                                className="myClassname"
-                                display="initial"
-                                position="relative" />
-                        </div>
 
-                        <div className='w-full h-full'>
-                            <Iframe
-                                url="https://www.youtube.com/embed/AqqMtcabNr8"
-                                width='100%'
-                                height='100%'
-                                id="myId"
-                                className="myClassname"
-                                display="initial"
-                                position="relative" />
-                        </div>
-
-                        <div className='w-full h-full'>
-                            <Iframe
-                                url="https://www.youtube.com/embed/54ZCz8mc7jE"
-                                width='100%'
-                                height='100%'
-                                id="myId"
-                                className="myClassname"
-                                display="initial"
-                                position="relative" />
-                        </div>
-
+                <div className='flex flex-wrap space-y-4 w-full h-60 mb-5 p-5 md:space-y-0 md:space-x-2'>
+                    <div className='w-full h-auto md:flex-1'>
+                        <Iframe
+                            url="https://www.youtube.com/embed/54ZCz8mc7jE"
+                            width='100%'
+                            height='100%'
+                            id="myId"
+                            className="myClassname"
+                            display="initial"
+                            position="relative" />
                     </div>
 
-                    <div className='flex space-x-7 w-full h-60 mb-5'>
-                        <div className='w-full h-full'>
-                            <Iframe
-                                url="https://www.youtube.com/embed/54ZCz8mc7jE"
-                                width='100%'
-                                height='100%'
-                                id="myId"
-                                className="myClassname"
-                                display="initial"
-                                position="relative" />
-                        </div>
-
-                        <div className='w-full h-full'>
-                            <Iframe
-                                url="https://www.youtube.com/embed/AqqMtcabNr8"
-                                width='100%'
-                                height='100%'
-                                id="myId"
-                                className="myClassname"
-                                display="initial"
-                                position="relative" />
-                        </div>
-
-                        <div className='w-full h-full'>
-                            <Iframe
-                                url="https://www.youtube.com/embed/54ZCz8mc7jE"
-                                width='100%'
-                                height='100%'
-                                id="myId"
-                                className="myClassname"
-                                display="initial"
-                                position="relative" />
-                        </div>
-
+                    <div className='w-full h-full md:flex-1'>
+                        <Iframe
+                            url="https://www.youtube.com/embed/AqqMtcabNr8"
+                            width='100%'
+                            height='100%'
+                            id="myId"
+                            className="myClassname"
+                            display="initial"
+                            position="relative" />
                     </div>
+
+                    <div className='w-full h-full md:flex-1'>
+                        <Iframe
+                            url="https://www.youtube.com/embed/54ZCz8mc7jE"
+                            width='100%'
+                            height='100%'
+                            id="myId"
+                            className="myClassname"
+                            display="initial"
+                            position="relative" />
+                    </div>
+
                 </div>
                 <Footer />
             </div>
