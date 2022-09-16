@@ -81,8 +81,8 @@ export default function Home() {
           </motion.div>
 
           <motion.div variants={fadeIn} className='w-full relative -top-2 order-first px-3 mb-3 flex flex-col items-center lg:flex-1'>
-            <div className='h-64 w-full relative p-10 border-solid border-2 rounded-full md:h-85 md:w-96'>
-              <div className='h-full  rounded-full relative overflow-hidden'>
+            <div className='h-64 w-full relative p-7 md:p-8 lg:p-10 border-solid border-2 rounded-full md:h-85 md:w-96'>
+              <div className='h-full rounded-full relative overflow-hidden'>
                 <div className='absolute -top-2'>
                   <Image loader={imageLoader} src={Collage} alt="profile pic" className='rounded-full' />
                 </div>
