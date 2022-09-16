@@ -16,6 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { fadeIn, slideInLeftFast, slideInRightFast, slideInFromBottom, stagger, antiStagger } from '../components/animations'
 
 import Flower from "../public/assets/flower.png"
+import Collage from '../public/assets/c1.jpg'
 
 const imageLoader = require("../loader");
 
@@ -55,7 +56,7 @@ export default function Home() {
         <motion.div variants={antiStagger} className='flex flex-wrap justify-between items-start'>
           <motion.div variants={slideInLeftFast} className='w-full pb-8 flex flex-1 flex-col justify-start items-start text-center md:text-left lg:order-first'>
             <div className="px-20 md:hidden">
-                <Image loader={imageLoader} src={Flower} alt="divider" />
+              <Image loader={imageLoader} src={Flower} alt="divider" />
             </div>
             <div className="w-full px-5">
               <h6 className="">BIOGRAPHY</h6>
@@ -80,21 +81,24 @@ export default function Home() {
           </motion.div>
 
           <motion.div variants={fadeIn} className='w-full relative -top-2 order-first px-3 mb-3 flex flex-col items-center lg:flex-1'>
-            <div className='h-64 w-full relative p-7 border-solid border-2 rounded-full md:h-85 md:w-96'>
-              <div className='h-full p-5 border-solid border-2 rounded-full bg-[#B7C6C9] relative'>
-                {/* <Image className='absolute bottom-0' src="/../public/assets/pict.png" width="900" height="700" alt="picture" /> */}
+            <div className='h-64 w-full relative p-10 border-solid border-2 rounded-full md:h-85 md:w-96'>
+              <div className='h-full  rounded-full relative overflow-hidden'>
+                <div className='absolute -top-2'>
+                  <Image loader={imageLoader} src={Collage} alt="profile pic" className='rounded-full' />
+                </div>
+
               </div>
 
             </div>
 
             <div className="px-48 hidden md:block lg:hidden">
-                <Image loader={imageLoader} src={Flower} alt="divider" />
+              <Image loader={imageLoader} src={Flower} alt="divider" />
             </div>
           </motion.div>
 
           <motion.div variants={slideInRightFast} className='w-full pb-8 flex flex-1 flex-col justify-center items-center text-center md:text-right'>
             <div className="px-20 md:hidden">
-                <Image loader={imageLoader} src={Flower} alt="divider" />
+              <Image loader={imageLoader} src={Flower} alt="divider" />
             </div>
             <div className="w-full">
               <h6>PROFESSIONAL<br />CERTIFICATIONS</h6>
@@ -121,8 +125,8 @@ export default function Home() {
         </motion.div>
         <motion.div variants={slideInFromBottom} className="pb-20 items-center">
           <div className="px-20 md:px-48 lg:px-[30rem]">
-                <Image loader={imageLoader} src={Flower} alt="divider" />
-            </div>
+            <Image loader={imageLoader} src={Flower} alt="divider" />
+          </div>
           <div className='text-center mt-2'>
             <h2>Skills</h2>
           </div>

@@ -74,7 +74,7 @@ export default function Home() {
 
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
                             <SiHtml5 size={18} color="#dd4b25" />
-                            <p className='font-bold'>SiHtml5</p>
+                            <p className='font-bold'>Html5</p>
                         </div>
 
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
