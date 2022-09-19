@@ -43,9 +43,9 @@ export default function Home() {
             <motion.div variants={stagger} className='h-screen w-full px-4 lg:px-28 py-1'>
                 <NavBar />
 
-                <div className="px-28 md:px-48 lg:px-[30rem]">
+                <motion.div variants={fadeIn} className="px-28 md:px-48 lg:px-[30rem]">
                     <Image loader={imageLoader} src={Flower} alt="divider" />
-                </div>
+                </motion.div>
 
                 <motion.div variants={fadeIn} className='m-5 mt-0 lg:m-5'>
                     <h3>Hello good people <span className='text-lg'>&#128075;</span></h3>

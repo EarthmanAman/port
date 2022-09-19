@@ -6,6 +6,7 @@ import {
 } from "react-icons/si"
 import { DiDjango, DiSass } from "react-icons/di"
 import { BsTools } from "react-icons/bs"
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,6 +18,9 @@ import OplScreen from "../public/assets/works/main_screen.png"
 import OplGraphs from "../public/assets/works/monthly1.png"
 import OplSales from "../public/assets/works/sale_pic.png"
 import Customer from "../public/assets/works/customer1.png"
+
+import { motion } from "framer-motion"
+import { fadeIn, stagger } from '../components/animations';
 
 import Flower from "../public/assets/flower.png"
 
@@ -43,21 +47,22 @@ export default function Home() {
         autoplaySpeed: 5000,
     };
     return (
-        <div>
+        <motion.div initial="initial" animate="animate">
             <Header />
 
-            <div className=' px-8 md:px-20 lg:px-28 py-1'>
+            <motion.div variants={stagger} className=' px-8 md:px-20 lg:px-28 py-1'>
                 <NavBar />
 
                 <div className='my-5'>
-                    <div className="px-28 md:px-56 lg:px-[30rem]">
+                    <motion.div variants={fadeIn} className="px-28 md:px-56 lg:px-[30rem]">
                         <Image loader={imageLoader} src={Flower} alt="divider" />
-                    </div>
-                    <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center lg:text-left'>OPL Daily Reporting & BI Tool</h3>
+                    </motion.div>
+                    <motion.div variants={fadeIn}>
+                        <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center lg:text-left'>OPL Daily Reporting & BI Tool</h3>
+                    </motion.div>
 
 
-
-                    <div className='my-5 flex flex-wrap space-x-2 space-y-2'>
+                    <motion.div variants={fadeIn} className='my-5 flex flex-wrap space-x-2 space-y-2'>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
                             <BsTools size={14} />
                             <p className='font-bold'>Technologies</p>
@@ -86,12 +91,12 @@ export default function Home() {
                             <DiSass size={18} color="#c76494" />
                         </div>
 
-                    </div>
-                    <div className='my-3 mt-7 px-2'>
+                    </motion.div>
+                    <motion.div variants={fadeIn} className='my-3 mt-7 px-2'>
                         <p className='leading-8 text-sm'>A portal which provide uploading of sales report from various depots</p>
                         <p className='leading-8 text-sm'>And shows trends of sales of the depots</p>
-                    </div>
-                    <div className='my-5 w-72 flex justify-between'>
+                    </motion.div>
+                    <motion.div variants={fadeIn} className='my-5 w-72 flex justify-between'>
                         <button className='bg-[#304577] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
                             <div className='flex items-center justify-between'>
                                 <FaEye />
@@ -106,10 +111,10 @@ export default function Home() {
                             </div>
 
                         </button>
-                    </div>
+                    </motion.div>
                 </div>
 
-                <div className='w-full'>
+                <motion.div variants={fadeIn} className='w-full'>
                     <div className='hidden md:hidden lg:block'>
                         <Slider {...settings} className=" my-10">
                             <div className='w-full mr-2 border-2'>
@@ -175,11 +180,11 @@ export default function Home() {
                         </div>
 
                     </div> */}
-                </div>
-            </div >
+                </motion.div>
+            </motion.div >
 
             <Footer />
 
-        </div >
+        </motion.div >
     )
 }
