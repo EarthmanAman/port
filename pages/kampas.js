@@ -13,7 +13,7 @@ import Footer from '../components/footer';
 import Header from '../components/head';
 import NavBar from '../components/home/nav';
 
-import KHome from "../public/assets/works/KampasHome.png"
+import KHome from "../public/assets/works/kampasHome.png"
 import Banner from "../public/assets/works/kampasBanner.png"
 import Detail from "../public/assets/works/kampasDetail.png"
 import Checkout from "../public/assets/works/kampasCheckout.png"

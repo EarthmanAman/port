@@ -4,7 +4,7 @@ import Link from "next/link";
 import NavBar from '../components/home/nav'
 import OplScreen from "../public/assets/works/opl_screen.png"
 import OnlineDuka from "../public/assets/works/duka_home.png"
-import KampasHome from "../public/assets/works/KampasHome.png"
+import KampasHome from "../public/assets/works/kampasHome.png"
 import Flower from "../public/assets/flower.png"
 
 import SpadeQuiz from "../public/assets/works/spadequiz.png"
