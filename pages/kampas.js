@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { FaEye } from "react-icons/fa"
 import {
-    SiMinutemailer, SiPython, SiReact, SiHtml5, SiCss3
+    SiMinutemailer, SiPython, SiHtml5, SiCss3
 } from "react-icons/si"
-import { DiDjango, DiSass } from "react-icons/di"
+import { DiDjango } from "react-icons/di"
 import { BsTools } from "react-icons/bs"
 
 import Slider from "react-slick";
