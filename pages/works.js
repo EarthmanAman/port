@@ -4,6 +4,7 @@ import Link from "next/link";
 import NavBar from '../components/home/nav'
 import OplScreen from "../public/assets/works/opl_screen.png"
 import OnlineDuka from "../public/assets/works/duka_home.png"
+import KampasHome from "../public/assets/works/KampasHome.png"
 import Flower from "../public/assets/flower.png"
 
 import SpadeQuiz from "../public/assets/works/spadequiz.png"
@@ -81,11 +82,11 @@ export default function Home() {
                     {/* </motion.div>
 
                 <motion.div variants={fadeIn} className='grid md:grid-cols-2 gap-5 mb-5'> */}
-                    <Link href="/opl_project">
+                    <Link href="/kampas">
                         <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer border-[0.02rem] p-1 border-[#6a0dad]'>
-                            <Image loader={imageLoader} src={OnlineDuka} alt="work 1" className='rounded-md group-hover:opacity-10' />
+                            <Image loader={imageLoader} src={KampasHome} alt="work 1" className='rounded-md group-hover:opacity-10' />
                             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                                <h2 className='text-[#fafafa]'>Online Duka</h2>
+                                <h2 className='text-[#fafafa]'>Kampas Market</h2>
                             </div>
                         </motion.div>
                     </Link>
