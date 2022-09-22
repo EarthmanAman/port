@@ -5,7 +5,7 @@ import { FaTwitter, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion"
 
 import { slideInFromTop } from '../animations';
-import Logo from '../../public/assets/logo.ico'
+import Logo from '../../public/assets/flower.png'
 const imageLoader = require("../../loader");
 export default function NavBar() {
     return (

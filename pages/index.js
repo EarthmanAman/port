@@ -15,8 +15,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { fadeIn, slideInLeftFast, slideInRightFast, slideInFromBottom, stagger, antiStagger } from '../components/animations'
 
-import Flower from "../public/assets/flower.png"
+import ProjectManagement from "../public/assets/pm.png"
+import UI_UX from "../public/assets/ui.png"
 import Collage from '../public/assets/c1.jpg'
+import Flower from '../public/assets/flower.png'
 
 const imageLoader = require("../loader");
 
@@ -45,91 +47,22 @@ export default function Home() {
         <NavBar />
         <motion.div variants={fadeIn} className='w-full text-center my-10 mt-5 tracking-widest'>
 
-          <motion.h1 className="text-[1.5rem] mb-1 tracking-[0.2rem] md:text-[2rem] md:mb-1.5 md:tracking-[0.3rem]">Hashim Athman</motion.h1>
-          <motion.h1 className="text-[1rem] mb-1 tracking-[0.1rem] md:text-[1.8rem] md:mb-1.5 md:tracking-[0.15rem]">Software Developer/Admin</motion.h1>
+          <motion.h1 className="text-[1.5rem] mb-1 tracking-[0.2rem] md:text-[1.5rem] md:mb-1.5 md:tracking-[0.3rem]">Hashim Athman</motion.h1>
+          <motion.h1 className="text-[1rem] mb-1 tracking-[0.1rem] md:text-[1.3rem] md:mb-1.5 md:tracking-[0.15rem]">Software Developer/Admin</motion.h1>
           <motion.div>
             <h2>My work is always a <span className="text-[#f60961]">Wooow</span></h2>
 
           </motion.div>
         </motion.div>
 
-        <motion.div variants={antiStagger} className='flex flex-wrap justify-between items-start'>
-          <motion.div variants={slideInLeftFast} className='w-full pb-8 flex flex-1 flex-col justify-start items-start text-center md:text-left lg:order-first'>
-            <div className="px-20 md:hidden">
-              <Image loader={imageLoader} src={Flower} alt="divider" />
-            </div>
-            <div className="w-full px-5">
-              <h6 className="">BIOGRAPHY</h6>
-              <p>Work for money and design for love! I'm Hashim, a full stack developer based in Kenya</p>
-            </div>
 
-            <div className="w-full px-5">
-              <h6>CONTACT</h6>
-              <p>Mombasa, Kenya</p>
-              <p>contact@hashimathman.com</p>
-              <p>+254 70146 7872</p>
-
-            </div>
-
-            <div className="w-full px-5">
-              <h6>SERVICES</h6>
-              <p>UI/UX Design</p>
-              <p>Backend Development</p>
-              <p>Frontend Development</p>
-              <p>Mobile Development</p>
-            </div>
-          </motion.div>
-
-          <motion.div variants={fadeIn} className='w-full relative -top-2 order-first px-3 mb-3 flex flex-col items-center lg:flex-1'>
-            <div className='h-64 w-full relative p-7 md:p-8 lg:p-10 border-solid border-2 rounded-full md:h-85 md:w-96'>
-              <div className='h-full rounded-full relative overflow-hidden'>
-                <div className='absolute -top-2'>
-                  <Image loader={imageLoader} src={Collage} alt="profile pic" className='rounded-full' />
-                </div>
-
-              </div>
-
-            </div>
-
-            <div className="px-48 hidden md:block lg:hidden">
-              <Image loader={imageLoader} src={Flower} alt="divider" />
-            </div>
-          </motion.div>
-
-          <motion.div variants={slideInRightFast} className='w-full pb-8 flex flex-1 flex-col justify-center items-center text-center md:text-right'>
-            <div className="px-20 md:hidden">
-              <Image loader={imageLoader} src={Flower} alt="divider" />
-            </div>
-            <div className="w-full">
-              <h6>PROFESSIONAL<br />CERTIFICATIONS</h6>
-              <p>Google UI/UX certification</p>
-              <p>Google Project Management certification</p>
-              <p>Google IT Support certification</p>
-            </div>
-
-            <div className="w-full">
-              <h6><br />OTHER CERTIFICATIONS</h6>
-              <p className='mb-2'>Advanced CSS and Sass: Flexbox, Grid, Animations</p>
-              <p>Ethereum and Solidity: The Complete Developer’s
-                Guide</p>
-            </div>
-
-            <div className="w-full">
-              <h6>PROJECTS DONE</h6>
-              <h2>10</h2>
-            </div>
-          </motion.div>
-
-
-
-        </motion.div>
         <motion.div variants={slideInFromBottom} className="pb-20 items-center">
-          <div className="px-20 md:px-48 lg:px-[30rem]">
+          {/* <div className="px-20 md:px-48 lg:px-[30rem]">
             <Image loader={imageLoader} src={Flower} alt="divider" />
           </div>
           <div className='text-center mt-2'>
             <h2>Skills</h2>
-          </div>
+          </div> */}
           <Slider {...settings} className="mx-2 my-3 md:mx-48 lg:mx-56">
             <div>
               <SiAdobexd size={25} color="#450135" />
@@ -211,6 +144,101 @@ export default function Home() {
             </div>
 
           </Slider>
+        </motion.div>
+
+
+
+        <motion.div variants={antiStagger} className='flex flex-wrap justify-between items-start'>
+          <motion.div variants={slideInLeftFast} className='w-full pb-8 flex flex-1 flex-col justify-start items-start text-center md:text-left lg:order-first'>
+            <div className="px-20 md:hidden">
+              <Image loader={imageLoader} src={Flower} alt="divider" />
+            </div>
+            <div className="w-full px-5">
+              <h6 className="">BIOGRAPHY</h6>
+              <p>Work for money and design for love! I'm Hashim, a full stack developer based in Kenya</p>
+            </div>
+
+            <div className="w-full px-5">
+              <h6>CONTACT</h6>
+              <p>Mombasa, Kenya</p>
+              <p>contact@hashimathman.com</p>
+              <p>+254 70146 7872</p>
+
+            </div>
+
+            <div className="w-full px-5">
+              <h6>SERVICES</h6>
+              <p>UI/UX Design</p>
+              <p>Backend Development</p>
+              <p>Frontend Development</p>
+              <p>Mobile Development</p>
+            </div>
+          </motion.div>
+
+          <motion.div variants={fadeIn} className='w-full relative -top-2 order-first px-3 mb-3 flex flex-col items-center lg:flex-1'>
+            <div className='h-64 w-full relative p-7 md:p-8 lg:p-10 border-solid border-2 rounded-full md:h-85 md:w-96'>
+              <div className='h-full rounded-full relative overflow-hidden'>
+                <div className='absolute -top-2'>
+                  <Image loader={imageLoader} src={Collage} alt="profile pic" className='rounded-full' />
+                </div>
+
+              </div>
+
+            </div>
+
+            <div className="px-48 hidden md:block lg:hidden">
+              <Image loader={imageLoader} src={Flower} alt="divider" />
+            </div>
+          </motion.div>
+
+          <motion.div variants={slideInRightFast} className='w-full pb-8 flex flex-1 flex-col justify-center items-center text-center md:text-right'>
+            <div className="px-20 md:hidden">
+              <Image loader={imageLoader} src={Flower} alt="divider" />
+            </div>
+            <div className="w-full">
+              <h6>PROFESSIONAL<br />CERTIFICATIONS</h6>
+              <p>Google UI/UX certification</p>
+              <p>Google Project Management certification</p>
+              <p>Google IT Support certification</p>
+            </div>
+
+            <div className="w-full">
+              <h6><br />OTHER CERTIFICATIONS</h6>
+              <p className='mb-2'>Advanced CSS and Sass: Flexbox, Grid, Animations</p>
+              <p>Ethereum and Solidity: The Complete Developer’s
+                Guide</p>
+            </div>
+
+            {/* <div className="w-full">
+              <h6>PROJECTS DONE</h6>
+              <h2>10</h2>
+            </div> */}
+          </motion.div>
+
+
+
+        </motion.div>
+
+        <div className="px-20 md:px-48 lg:px-[30rem]">
+          <Image loader={imageLoader} src={Flower} alt="divider" />
+        </div>
+        <div className='text-center mt-2'>
+          <h2>Certifications</h2>
+        </div>
+        <motion.div variants={fadeIn} className='w-full flex flex-wrap space-x-1 md:space-x-4  mt-5 items-center justify-center'>
+          <motion.div className='w-[48%] ml-1 md:w-[10%]'>
+            <Image loader={imageLoader} src={ProjectManagement} alt="pic 1" />
+          </motion.div>
+          <motion.div className='w-[48%] md:w-[10%]'>
+            <Image loader={imageLoader} src={UI_UX} alt="pic 1" />
+          </motion.div>
+
+          {/* <motion.div className='w-[48%] md:flex-1'>
+            <Image loader={imageLoader} src={Profile} alt="pic 1" />
+          </motion.div>
+          <motion.div className='w-[48%] md:flex-1'>
+            <Image loader={imageLoader} src={Profile} alt="pic 1" />
+          </motion.div> */}
         </motion.div>
       </motion.div>
     </motion.div>

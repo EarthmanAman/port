@@ -22,7 +22,7 @@
 
     /* prettier-ignore */
     h2 {
-        @apply text-[1rem] md:text-[1.5rem] font-DancingScript font-extrabold
+        @apply text-[1rem] md:text-[1.2rem] font-DancingScript font-extrabold
     }
 
     h3 {
