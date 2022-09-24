@@ -56,12 +56,12 @@ export default function Home() {
                     <motion.div variants={fadeIn} className="px-28 md:px-56 lg:px-[30rem]">
                         <Image loader={imageLoader} src={Flower} alt="divider" />
                     </motion.div>
-                    <motion.div variants={fadeIn}>
-                        <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center lg:text-left'>Kampas Market</h3>
+                    <motion.div variants={fadeIn} className="text-center">
+                        <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center'>KAMPAS MARKET</h3>
                     </motion.div>
 
 
-                    <motion.div variants={fadeIn} className='my-5 flex flex-wrap space-x-2 space-y-2'>
+                    <motion.div variants={fadeIn} className='my-5 flex flex-wrap space-x-2 space-y-2 justify-center'>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
                             <BsTools size={14} />
                             <p className='font-bold'>Technologies</p>
@@ -88,28 +88,7 @@ export default function Home() {
                         </div>
 
                     </motion.div>
-                    <motion.div variants={fadeIn} className='my-3 mt-7 px-2'>
-                        <p className='leading-8 text-sm'>An ecommerce site designed for campus student.</p>
-                        <p className='leading-8 text-sm'>The target was to provide fast delivery of items across the campus.</p>
-                    </motion.div>
-                    <motion.div variants={fadeIn} className='my-5 w-72 flex justify-between'>
-                        <button className='bg-[#304577] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
-                            <a href='https://kampasmarket.hashimathman.com/' target="_blank">
-                                <div className='flex items-center justify-between'>
-                                    <FaEye />
-                                    <p className='ml-2'>Preview</p>
-                                </div>
-                            </a>
 
-                        </button>
-                        <button className='bg-[#D04D30] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
-                            <div className='flex items-center justify-between'>
-                                <SiMinutemailer />
-                                <p className='ml-2'>Request Demo</p>
-                            </div>
-
-                        </button>
-                    </motion.div>
                 </div>
 
                 <motion.div variants={fadeIn} className='w-full'>
@@ -146,40 +125,44 @@ export default function Home() {
                             </div>
                         </Slider>
                     </div>
-
-
-                    {/* <div className='my-5 flex space-x-6'>
-                        <div className='flex space-x-2 items-center  bg-slate-100 px-3 py-2 rounded-md'>
-                            <BsTools size={25} />
-                            <p className='font-bold'>Technologies</p>
-                        </div>
-                        <h1>:</h1>
-                        <div className='flex space-x-2 items-center  bg-slate-200 px-3 py-2 rounded-md'>
-                            <SiAdobexd size={25} color="#450135" />
-                            <p className='font-bold'>Adobe</p>
-                        </div>
-
-                        <div className='flex space-x-2 items-center bg-slate-200 px-3 py-2 rounded-md'>
-                            <SiPython size={25} color="#326a96" />
-                            <p className='font-bold'>Python</p>
-                        </div>
-
-                        <div className='flex space-x-2 items-center bg-slate-200 px-3 py-2 rounded-md'>
-                            <DiDjango size={25} color="#092d1f" />
-                        </div>
-
-                        <div className='flex space-x-2 items-center bg-slate-200 px-3 py-2 rounded-md'>
-                            <SiReact size={25} color="#5ed3f3" />
-                            <p className='font-bold'>React</p>
-                        </div>
-
-                        <div className='flex space-x-2 items-center bg-slate-200 px-3 py-2 rounded-md'>
-                            <DiSass size={25} color="#c76494" />
-                        </div>
-
-                    </div> */}
                 </motion.div>
+
+                <div className='text-center'>
+                    <motion.div variants={fadeIn} className="px-28 md:px-56 lg:px-[30rem]">
+                        <Image loader={imageLoader} src={Flower} alt="divider" />
+                    </motion.div>
+
+                    <motion.div variants={fadeIn}>
+                        <h3 className='font-bold'>PROJECT MOTIVATION</h3>
+                    </motion.div>
+                    <motion.div variants={fadeIn} className='my-3 mt-7 px-10'>
+                        <p className='leading-8 text-sm mb-3'>While on campus I had the idea of developing an e-commerce site to help serve the student around the campus to obtain small goods without having to go to town to buy or get from agents of various e-commerce sites.</p>
+                        <p className='leading-8 text-sm'>Our model was simple: you order, we accumulate the orders, go to town, fetch them, and deliver them to our customer dorm rooms.</p>
+                    </motion.div>
+                </div>
+
+                {/* <motion.div variants={fadeIn} className='my-5 w-72 flex justify-between'>
+                    <button className='bg-[#304577] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
+                        <a href='https://kampasmarket.hashimathman.com/' target="_blank">
+                            <div className='flex items-center justify-between'>
+                                <FaEye />
+                                <p className='ml-2'>Preview</p>
+                            </div>
+                        </a>
+
+                    </button>
+                    <button className='bg-[#D04D30] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
+                        <div className='flex items-center justify-between'>
+                            <SiMinutemailer />
+                            <p className='ml-2'>Request Demo</p>
+                        </div>
+
+                    </button>
+                </motion.div> */}
+
             </motion.div >
+
+
 
             <Footer />
 

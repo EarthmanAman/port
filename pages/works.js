@@ -63,6 +63,16 @@ export default function Home() {
                             </div>
                         </motion.div>
                     </Link>
+
+                    <Link href="/kampas">
+                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer border-[0.02rem] p-1 border-[#6a0dad]'>
+                            <Image loader={imageLoader} src={KampasHome} alt="work 1" className='rounded-md group-hover:opacity-10' />
+                            <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+                                <h2 className='text-[#fafafa]'>Kampas Market</h2>
+                            </div>
+                        </motion.div>
+                    </Link>
+
                     <Link href="/spadequiz">
                         <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer border-[0.02rem] p-1 border-[#6a0dad]'>
                             <Image loader={imageLoader} src={SpadeQuiz} alt="work 1" className='rounded-md group-hover:opacity-10 w-full h-auto' />
@@ -82,14 +92,7 @@ export default function Home() {
                     {/* </motion.div>
 
                 <motion.div variants={fadeIn} className='grid md:grid-cols-2 gap-5 mb-5'> */}
-                    <Link href="/kampas">
-                        <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer border-[0.02rem] p-1 border-[#6a0dad]'>
-                            <Image loader={imageLoader} src={KampasHome} alt="work 1" className='rounded-md group-hover:opacity-10' />
-                            <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                                <h2 className='text-[#fafafa]'>Kampas Market</h2>
-                            </div>
-                        </motion.div>
-                    </Link>
+
 
                     {/* <Link href="/opl_project">
                         <motion.div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-200 rounded-md group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] cursor-pointer border-[0.02rem] p-1 border-[#6a0dad]'>
