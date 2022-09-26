@@ -149,8 +149,8 @@ export default function Home() {
                     </motion.div>
                 </div>
 
-                <div className='flex flex-wrap text-left w-full my-24 px-10'>
-                    <div className='w-full md:w-[60%] mb-5 pr-16'>
+                <div className='flex flex-wrap text-center md:text-left w-full my-24 md:px-10'>
+                    <div className='w-full md:w-[60%] mb-5 md:pr-16'>
                         <h3 className='font-bold text-lg md:text-xl lg:text-2xl mb-8'>RESEARCH & FINDINGS</h3>
                         <p className='leading-8 text-sm mb-3'>While on campus I had the idea of developing an e-commerce site to help serve the student around the campus to obtain small goods without having to go to town to buy or get from agents of various e-commerce sites.</p>
 
@@ -173,18 +173,18 @@ export default function Home() {
                         </div>
 
                     </div>
-                    <div className='h-auto w-full md:w-[40%] px-16'>
+                    <div className='h-auto w-full md:w-[40%] px-16 order-first md:order-last mb-10'>
                         <Image loader={imageLoader} layout='responsive' src={Research} alt="research" width={200} height={200} />
                     </div>
                 </div>
 
 
-                <div className='flex flex-wrap text-right w-full my-24 px-10'>
+                <div className='flex flex-wrap text-center md:text-right w-full my-24 px-10'>
                     <div className='h-auto w-full md:w-[40%] px-16'>
                         <Image loader={imageLoader} layout='responsive' src={Solution} alt="research" width={200} height={200} />
                     </div>
 
-                    <div className='w-full md:w-[60%] mb-5 pl-16'>
+                    <div className='w-full md:w-[60%] mb-5 md:pl-16'>
                         <h3 className='font-bold text-lg md:text-xl lg:text-2xl mb-8'>PROPOSED SOLUTION</h3>
                         <p className='leading-8 text-sm mb-3'>While on campus I had the idea of developing an e-commerce site to help serve the student around the campus to obtain small goods without having to go to town to buy or get from agents of various e-commerce sites.</p>
 
