@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FaEye } from "react-icons/fa"
 import {
-    SiMinutemailer,
+    SiMinutemailer, SiCodemagic,
     SiAdobexd, SiPython, SiReact, SiHtml5, SiPostgresql,
 } from "react-icons/si"
 import { DiDjango, DiSass } from "react-icons/di"
@@ -18,6 +18,9 @@ import OplScreen from "../public/assets/works/main_screen.png"
 import OplGraphs from "../public/assets/works/monthly1.png"
 import OplSales from "../public/assets/works/sale_pic.png"
 import Customer from "../public/assets/works/customer1.png"
+
+import Research from "../public/assets/research.svg"
+import Solution from "../public/assets/solution.svg"
 
 import { motion } from "framer-motion"
 import { fadeIn, stagger } from '../components/animations';
@@ -58,11 +61,11 @@ export default function Home() {
                         <Image loader={imageLoader} src={Flower} alt="divider" />
                     </motion.div>
                     <motion.div variants={fadeIn}>
-                        <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center lg:text-left'>OPL Daily Reporting & BI Tool</h3>
+                        <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center '>OPL Daily Reporting & BI Tool</h3>
                     </motion.div>
 
 
-                    <motion.div variants={fadeIn} className='my-5 flex flex-wrap space-x-2 space-y-2'>
+                    <motion.div variants={fadeIn} className='my-5 flex flex-wrap space-x-2 space-y-2 justify-center'>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
                             <BsTools size={14} />
                             <p className='font-bold'>Technologies</p>
@@ -92,26 +95,7 @@ export default function Home() {
                         </div>
 
                     </motion.div>
-                    <motion.div variants={fadeIn} className='my-3 mt-7 px-2'>
-                        <p className='leading-8 text-sm'>A portal which provide uploading of sales report from various depots</p>
-                        <p className='leading-8 text-sm'>And shows trends of sales of the depots</p>
-                    </motion.div>
-                    <motion.div variants={fadeIn} className='my-5 w-72 flex justify-between'>
-                        <button className='bg-[#304577] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
-                            <div className='flex items-center justify-between'>
-                                <FaEye />
-                                <p className='ml-2'>Preview</p>
-                            </div>
 
-                        </button>
-                        <button className='bg-[#D04D30] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
-                            <div className='flex items-center justify-between'>
-                                <SiMinutemailer />
-                                <p className='ml-2'>Request Demo</p>
-                            </div>
-
-                        </button>
-                    </motion.div>
                 </div>
 
                 <motion.div variants={fadeIn} className='w-full'>
@@ -149,38 +133,66 @@ export default function Home() {
                         </Slider>
                     </div>
 
-
-                    {/* <div className='my-5 flex space-x-6'>
-                        <div className='flex space-x-2 items-center  bg-slate-100 px-3 py-2 rounded-md'>
-                            <BsTools size={25} />
-                            <p className='font-bold'>Technologies</p>
-                        </div>
-                        <h1>:</h1>
-                        <div className='flex space-x-2 items-center  bg-slate-200 px-3 py-2 rounded-md'>
-                            <SiAdobexd size={25} color="#450135" />
-                            <p className='font-bold'>Adobe</p>
-                        </div>
-
-                        <div className='flex space-x-2 items-center bg-slate-200 px-3 py-2 rounded-md'>
-                            <SiPython size={25} color="#326a96" />
-                            <p className='font-bold'>Python</p>
-                        </div>
-
-                        <div className='flex space-x-2 items-center bg-slate-200 px-3 py-2 rounded-md'>
-                            <DiDjango size={25} color="#092d1f" />
-                        </div>
-
-                        <div className='flex space-x-2 items-center bg-slate-200 px-3 py-2 rounded-md'>
-                            <SiReact size={25} color="#5ed3f3" />
-                            <p className='font-bold'>React</p>
-                        </div>
-
-                        <div className='flex space-x-2 items-center bg-slate-200 px-3 py-2 rounded-md'>
-                            <DiSass size={25} color="#c76494" />
-                        </div>
-
-                    </div> */}
                 </motion.div>
+
+                <div className='text-center'>
+                    <motion.div variants={fadeIn} className="px-28 md:px-56 lg:px-[30rem]">
+                        <Image loader={imageLoader} src={Flower} alt="divider" />
+                    </motion.div>
+
+                    <motion.div variants={fadeIn}>
+                        <h3 className='font-bold'>PROBLEM STATEMENT</h3>
+                    </motion.div>
+                    <motion.div variants={fadeIn} className='my-3 mt-7 px-10'>
+                        <p className='leading-8 text-sm mb-3'>While on campus I had the idea of developing an e-commerce site to help serve the student around the campus to obtain small goods without having to go to town to buy or get from agents of various e-commerce sites.</p>
+                        <p className='leading-8 text-sm'>Our model was simple: you order, we accumulate the orders, go to town, fetch them, and deliver them to our customer dorm rooms.</p>
+                    </motion.div>
+                </div>
+
+                <div className='flex flex-wrap text-left w-full my-24 px-10'>
+                    <div className='w-full md:w-[60%] mb-5 pr-16'>
+                        <h3 className='font-bold text-lg md:text-xl lg:text-2xl mb-8'>RESEARCH & FINDINGS</h3>
+                        <p className='leading-8 text-sm mb-3'>While on campus I had the idea of developing an e-commerce site to help serve the student around the campus to obtain small goods without having to go to town to buy or get from agents of various e-commerce sites.</p>
+
+                        <div className='px-8'>
+                            <div className='flex items-center space-x-2 mb-4'>
+                                <span><SiCodemagic /></span>
+                                <p>First item will go here</p>
+                            </div>
+
+                            <div className='flex items-center space-x-2 mb-4'>
+                                <span><SiCodemagic /></span>
+                                <p>First item will go here</p>
+                            </div>
+
+                            <div className='flex items-center space-x-2 mb-4'>
+                                <span><SiCodemagic /></span>
+                                <p>First item will go here</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div className='h-auto w-full md:w-[40%] px-16'>
+                        <Image loader={imageLoader} layout='responsive' src={Research} alt="research" width={200} height={200} />
+                    </div>
+                </div>
+
+
+                <div className='flex flex-wrap text-right w-full my-24 px-10'>
+                    <div className='h-auto w-full md:w-[40%] px-16'>
+                        <Image loader={imageLoader} layout='responsive' src={Solution} alt="research" width={200} height={200} />
+                    </div>
+
+                    <div className='w-full md:w-[60%] mb-5 pl-16'>
+                        <h3 className='font-bold text-lg md:text-xl lg:text-2xl mb-8'>PROPOSED SOLUTION</h3>
+                        <p className='leading-8 text-sm mb-3'>While on campus I had the idea of developing an e-commerce site to help serve the student around the campus to obtain small goods without having to go to town to buy or get from agents of various e-commerce sites.</p>
+
+
+
+                    </div>
+
+                </div>
             </motion.div >
 
             <Footer />
