@@ -18,7 +18,7 @@ import OplScreen from "../public/assets/works/main_screen.png"
 import OplGraphs from "../public/assets/works/monthly1.png"
 import OplSales from "../public/assets/works/sale_pic.png"
 import Customer from "../public/assets/works/customer1.png"
-
+import CompanyLogo from "../public/assets/opl_logo.png"
 import Research from "../public/assets/research.svg"
 import Solution from "../public/assets/solution.svg"
 
@@ -58,7 +58,7 @@ export default function Home() {
 
                 <div className='my-5'>
                     <motion.div variants={fadeIn} className="px-28 md:px-56 lg:px-[30rem]">
-                        <Image loader={imageLoader} src={Flower} alt="divider" />
+                        <Image loader={imageLoader} src={CompanyLogo} alt="divider" />
                     </motion.div>
                     <motion.div variants={fadeIn}>
                         <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center '>OPL Daily Reporting & BI Tool</h3>
@@ -135,7 +135,7 @@ export default function Home() {
 
                 </motion.div>
 
-                <div className='text-center'>
+                <div className='text-center py-10 pb-2'>
                     <motion.div variants={fadeIn} className="px-28 md:px-56 lg:px-[30rem]">
                         <Image loader={imageLoader} src={Flower} alt="divider" />
                     </motion.div>
@@ -144,33 +144,21 @@ export default function Home() {
                         <h3 className='font-bold'>PROBLEM STATEMENT</h3>
                     </motion.div>
                     <motion.div variants={fadeIn} className='my-3 mt-7 px-10'>
-                        <p className='leading-8 text-sm mb-3'>While on campus I had the idea of developing an e-commerce site to help serve the student around the campus to obtain small goods without having to go to town to buy or get from agents of various e-commerce sites.</p>
-                        <p className='leading-8 text-sm'>Our model was simple: you order, we accumulate the orders, go to town, fetch them, and deliver them to our customer dorm rooms.</p>
+                        <p className='leading-8 text-sm mb-3'>One Petroleum is a company located in Mombasa Kenya. It deals in oil products Petrol, diesel, and kerosine. To allow distribution across the country, they have depots across the country</p>
+                        <p className='leading-8 text-sm'>Daily each depot provides a daily report of sales. Unfortunately, they were using manual excel to do that which give the challenge of retrieval of previous records and performing some business intelligence on the data</p>
                     </motion.div>
                 </div>
 
-                <div className='flex flex-wrap text-center md:text-left w-full my-24 md:px-10'>
+
+
+                <div className='flex flex-wrap text-center md:text-left w-full my-16 md:px-10'>
                     <div className='w-full md:w-[60%] mb-5 md:pr-16'>
-                        <h3 className='font-bold text-lg md:text-xl lg:text-2xl mb-8'>RESEARCH & FINDINGS</h3>
-                        <p className='leading-8 text-sm mb-3'>While on campus I had the idea of developing an e-commerce site to help serve the student around the campus to obtain small goods without having to go to town to buy or get from agents of various e-commerce sites.</p>
+                        <h3 className='font-bold text-lg md:text-xl lg:text-2xl mb-8'>RESEARCH</h3>
+                        <p className='leading-8 text-sm mb-3'>To understand the scope of the problem and find a solution, I talked to the depot managers and the management to find out how the current process works and identify requirements to be achieved in our solution.</p>
+                        <p className='leading-8 text-sm mb-3'>I also analyzed the old reports and identify the data which are similar in all the depots and the ones unique to a given depot.</p>
+                        <p className='leading-8 text-sm mb-3'>I then organized a meeting with the stakeholders to identify the type of data they want and how to accommodate the uniqueness of the data in the depots.</p>
 
-                        <div className='px-8'>
-                            <div className='flex items-center space-x-2 mb-4'>
-                                <span><SiCodemagic /></span>
-                                <p>First item will go here</p>
-                            </div>
 
-                            <div className='flex items-center space-x-2 mb-4'>
-                                <span><SiCodemagic /></span>
-                                <p>First item will go here</p>
-                            </div>
-
-                            <div className='flex items-center space-x-2 mb-4'>
-                                <span><SiCodemagic /></span>
-                                <p>First item will go here</p>
-                            </div>
-
-                        </div>
 
                     </div>
                     <div className='h-auto w-full md:w-[40%] px-16 order-first md:order-last mb-10'>
@@ -179,6 +167,39 @@ export default function Home() {
                 </div>
 
 
+                <div className='text-center py-2'>
+
+                    <motion.div variants={fadeIn}>
+                        <h3 className='font-bold'>FINDINGS</h3>
+                    </motion.div>
+                    <motion.div variants={fadeIn} className='my-3 mt-7 px-10 w-full'>
+                        <div className='px-8 w-full'>
+                            <div className='flex justify-center items-center space-x-2 mb-4'>
+                                <span><SiCodemagic /></span>
+                                <p>The depot managers prefer the usage of excel because of is easy to update and correct errors in sales.</p>
+                            </div>
+
+                            <div className='flex justify-center items-center space-x-2 mb-4'>
+                                <span><SiCodemagic /></span>
+                                <p>There is no uniqueness in the data field it’s only that some sales do not contain that information.</p>
+                            </div>
+
+                            <div className='flex justify-center items-center space-x-2 mb-4'>
+                                <span><SiCodemagic /></span>
+                                <p>There are different categories of sales. Some sales are just transfers from one depot to another.
+                                </p>
+                            </div>
+
+                            <div className='flex justify-center items-center space-x-2 mb-4'>
+                                <span><SiCodemagic /></span>
+                                <p>Several depot managers manage more than one depot
+                                </p>
+                            </div>
+
+                        </div>
+                    </motion.div>
+                </div>
+
                 <div className='flex flex-wrap text-center md:text-right w-full my-24 px-10'>
                     <div className='h-auto w-full md:w-[40%] px-16'>
                         <Image loader={imageLoader} layout='responsive' src={Solution} alt="research" width={200} height={200} />
@@ -186,9 +207,9 @@ export default function Home() {
 
                     <div className='w-full md:w-[60%] mb-5 md:pl-16'>
                         <h3 className='font-bold text-lg md:text-xl lg:text-2xl mb-8'>PROPOSED SOLUTION</h3>
-                        <p className='leading-8 text-sm mb-3'>While on campus I had the idea of developing an e-commerce site to help serve the student around the campus to obtain small goods without having to go to town to buy or get from agents of various e-commerce sites.</p>
-
-
+                        <p className='leading-8 text-sm mb-3'>After analyzing the problem and the finding from the research, I proposed to implement an online portal where the depot manager will be uploading their daily reports.</p>
+                        <p className='leading-8 text-sm mb-3'>To allow ease of modification of sales and error corrections on the sales. The mode of data upload I proposed to be through a standard excel sheet which was approved by the management.</p>
+                        <p className='leading-8 text-sm mb-3'>With the data collected, graphs and trends will be generated automatically in the portal.</p>
 
                     </div>
 
