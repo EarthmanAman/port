@@ -172,26 +172,26 @@ export default function Home() {
                     <motion.div variants={fadeIn}>
                         <h3 className='font-bold'>FINDINGS</h3>
                     </motion.div>
-                    <motion.div variants={fadeIn} className='my-3 mt-7 px-10 w-full'>
+                    <motion.div variants={fadeIn} className='my-3 mt-7 md:px-10 w-full'>
                         <div className='px-8 w-full'>
-                            <div className='flex justify-center items-center space-x-2 mb-4'>
-                                <span><SiCodemagic /></span>
+                            <div className='flex flex-wrap  justify-center items-center space-x-2 mb-4'>
+                                <span className='mb-2 md:mb-0'><SiCodemagic /></span>
                                 <p>The depot managers prefer the usage of excel because of is easy to update and correct errors in sales.</p>
                             </div>
 
-                            <div className='flex justify-center items-center space-x-2 mb-4'>
-                                <span><SiCodemagic /></span>
+                            <div className='flex flex-wrap justify-center items-center space-x-2 mb-4'>
+                                <span className='mb-2 md:mb-0'><SiCodemagic /></span>
                                 <p>There is no uniqueness in the data field it’s only that some sales do not contain that information.</p>
                             </div>
 
-                            <div className='flex justify-center items-center space-x-2 mb-4'>
-                                <span><SiCodemagic /></span>
+                            <div className='flex flex-wrap justify-center items-center space-x-2 mb-4'>
+                                <span className='mb-2 md:mb-0'><SiCodemagic /></span>
                                 <p>There are different categories of sales. Some sales are just transfers from one depot to another.
                                 </p>
                             </div>
 
-                            <div className='flex justify-center items-center space-x-2 mb-4'>
-                                <span><SiCodemagic /></span>
+                            <div className='flex flex-wrap justify-center items-center space-x-2 mb-4'>
+                                <span className='mb-2 md:mb-0'><SiCodemagic /></span>
                                 <p>Several depot managers manage more than one depot
                                 </p>
                             </div>
