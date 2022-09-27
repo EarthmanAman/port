@@ -151,7 +151,7 @@ export default function Home() {
 
 
 
-                <div className='flex flex-wrap text-center md:text-left w-full my-16 md:px-10'>
+                <motion.div variants={fadeIn} className='flex flex-wrap text-center md:text-left w-full my-16 md:px-10'>
                     <div className='w-full md:w-[60%] mb-5 md:pr-16'>
                         <h3 className='font-bold text-lg md:text-xl lg:text-2xl mb-8'>RESEARCH</h3>
                         <p className='leading-8 text-sm mb-3'>To understand the scope of the problem and find a solution, I talked to the depot managers and the management to find out how the current process works and identify requirements to be achieved in our solution.</p>
@@ -164,10 +164,10 @@ export default function Home() {
                     <div className='h-auto w-full md:w-[40%] px-16 order-first md:order-last mb-10'>
                         <Image loader={imageLoader} layout='responsive' src={Research} alt="research" width={200} height={200} />
                     </div>
-                </div>
+                </motion.div>
 
 
-                <div className='text-center py-2'>
+                <motion.div variants={fadeIn} className='text-center py-2'>
 
                     <motion.div variants={fadeIn}>
                         <h3 className='font-bold'>FINDINGS</h3>
@@ -198,9 +198,9 @@ export default function Home() {
 
                         </div>
                     </motion.div>
-                </div>
+                </motion.div>
 
-                <div className='flex flex-wrap text-center md:text-right w-full my-24 px-10'>
+                <motion.div variants={fadeIn} className='flex flex-wrap text-center md:text-right w-full my-24 px-10'>
                     <div className='h-auto w-full md:w-[40%] px-16'>
                         <Image loader={imageLoader} layout='responsive' src={Solution} alt="research" width={200} height={200} />
                     </div>
@@ -213,7 +213,7 @@ export default function Home() {
 
                     </div>
 
-                </div>
+                </motion.div>
             </motion.div >
 
             <Footer />
