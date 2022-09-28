@@ -17,9 +17,10 @@ import Announcements from "../public/assets/works/announcements.png"
 import Report from "../public/assets/works/report.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
+import { motion } from "framer-motion"
+import { fadeIn, stagger } from '../components/animations';
 import Flower from "../public/assets/flower.png"
+import Upwork from "../public/assets/upwork.png"
 
 const imageLoader = require("../loader");
 
@@ -45,19 +46,19 @@ export default function Home() {
     };
 
     return (
-        <div>
+        <motion.div initial="initial" animate="animate">
             <Header />
 
-            <div className=' px-8 md:px-20 lg:px-28 py-1'>
+            <motion.div variants={stagger} className=' px-8 md:px-20 lg:px-28 py-1'>
                 <NavBar />
                 <div className='my-5'>
-                    <div className="px-28 md:px-56 lg:px-[30rem]">
-                        <Image loader={imageLoader} src={Flower} alt="divider" />
-                    </div>
-
-                    <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center lg:text-left'>Spadequiz A Gaming Tracking Portal</h3>
-
-                    <div className='my-5 flex flex-wrap space-x-2 space-y-2'>
+                    <motion.div variants={fadeIn} className="px-28 md:px-56 lg:px-[30rem]">
+                        <Image loader={imageLoader} src={Upwork} alt="divider" />
+                    </motion.div>
+                    <motion.div variants={fadeIn}>
+                        <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center'>Spadequiz A Gaming Tracking Platform</h3>
+                    </motion.div>
+                    <motion.div variants={fadeIn} className='my-5 flex flex-wrap justify-center space-x-2 space-y-2'>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
                             <BsTools size={14} />
                             <p className='font-bold'>Technologies</p>
@@ -92,32 +93,11 @@ export default function Home() {
                             <p className='font-bold'>Postgresql</p>
                         </div>
 
-                    </div>
-                    <div className='my-3 mt-7 px-2'>
-                        <p className='leading-8 text-sm'>A portal to enable players find tournaments and be rated from winning games.</p>
-                        <p className='leading-8 text-sm'>When a player loses a game he/she report the results</p>
-                    </div>
-                    <div className='my-8 w-72 flex justify-between'>
-                        <button className='bg-[#304577] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
-                            <div className='flex items-center justify-between'>
-                                <FaEye />
-                                <p className='ml-2'>Preview</p>
-                            </div>
+                    </motion.div>
 
-                        </button>
-                        <button className='bg-[#D04D30] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
-                            <div className='flex items-center justify-between'>
-                                <SiMinutemailer />
-                                <p className='ml-2'>Request Demo</p>
-                            </div>
-
-                        </button>
-
-
-                    </div>
                 </div>
 
-                <div className='w-full'>
+                <motion.div variants={fadeIn} className='w-full'>
                     <div className='hidden md:hidden lg:block'>
                         <Slider {...settings} className=" my-10">
                             <div className='w-full mr-2 border-2'>
@@ -151,6 +131,23 @@ export default function Home() {
                             </div>
                         </Slider>
                     </div>
+
+                    <div className='text-center'>
+                        <motion.div variants={fadeIn} className="px-28 md:px-56 lg:px-[30rem]">
+                            <Image loader={imageLoader} src={Flower} alt="divider" />
+                        </motion.div>
+
+                        <motion.div variants={fadeIn}>
+                            <h3 className='font-bold'>PROJECT DESCRIPTION</h3>
+                        </motion.div>
+                        <motion.div variants={fadeIn} className='my-3 mt-7 px-10'>
+                            <p className='leading-8 text-sm mb-3'>While working as a freelancer in Upwork, I got a client who wanted an online platform where admins can create leagues and board game players can register in a league and track their wins and losses against other players.</p>
+                            <p className='leading-8 text-sm'>Each league has an admin who controls the rules governing the league and can create tournaments where league members can participate.</p>
+                            <p className='leading-8 text-sm'>When a user joins the platform he/she is provided ratings and the ratings are reduced or increased by losing or winning matches respectively</p>
+                            <p className='leading-8 text-sm'>When two players are matched to play against each other they can play the game online or physically and the loser reports the match result on the platform.</p>
+                        </motion.div>
+                    </div>
+
                     {/* <div className='my-5 flex space-x-6'>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-3 py-2 rounded-md'>
                             <BsTools size={25} />
@@ -181,11 +178,11 @@ export default function Home() {
                         </div>
 
                     </div> */}
-                </div>
-            </div >
+                </motion.div>
+            </motion.div >
 
             <Footer />
 
-        </div >
+        </motion.div >
     )
 }

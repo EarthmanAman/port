@@ -20,6 +20,9 @@ import ProfilePage from "../public/assets/works/profile.png"
 
 import Flower from "../public/assets/flower.png"
 
+import { motion } from "framer-motion"
+import { fadeIn, stagger } from '../components/animations';
+
 const imageLoader = require("../loader");
 
 export default function Home() {
@@ -44,19 +47,20 @@ export default function Home() {
     };
 
     return (
-        <div>
+        <motion.div initial="initial" animate="animate">
             <Header />
 
-            <div className=' px-8 md:px-20 lg:px-28 py-1'>
+            <motion.div variants={stagger} className=' px-8 md:px-20 lg:px-28 py-1'>
                 <NavBar />
                 <div className='my-5'>
-                    <div className="px-28 md:px-56 lg:px-[30rem]">
+                    <motion.div variants={fadeIn} className="px-28 md:px-56 lg:px-[30rem]">
                         <Image loader={imageLoader} src={Flower} alt="divider" />
-                    </div>
+                    </motion.div>
 
-                    <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center lg:text-left'>Bill Management Portal</h3>
-
-                    <div className='my-5 flex flex-wrap space-x-2 space-y-2'>
+                    <motion.div variants={fadeIn}>
+                        <h3 className='font-bold text-lg md:text-xl lg:text-2xl text-center'>Bill Management Portal</h3>
+                    </motion.div>
+                    <motion.div variants={fadeIn} className='my-5 flex flex-wrap justify-center space-x-2 space-y-2'>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-2 py-1 rounded-md'>
                             <BsTools size={14} />
                             <p className='font-bold'>Technologies</p>
@@ -82,39 +86,11 @@ export default function Home() {
                             <p className='font-bold'>CSS</p>
                         </div>
 
-                    </div>
-                    <div className='my-3 mt-7 px-2'>
-                        <p className='leading-8 text-sm'>A portal which provide uploading of sales report from various depots</p>
-                        <p className='leading-8 text-sm'>And shows trends of sales of the depots</p>
-                    </div>
-                    <div className='my-8 w-80 flex justify-between'>
-                        {/* <button className='bg-[#304577] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
-                            <div className='flex items-center justify-between'>
-                                <FaEye />
-                                <p className='ml-2'>Preview</p>
-                            </div>
+                    </motion.div>
 
-                        </button> */}
-                        <button className='bg-[#D04D30] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
-                            <div className='flex items-center justify-between'>
-                                <SiMinutemailer />
-                                <p className='ml-2'>Request Demo</p>
-                            </div>
-
-                        </button>
-
-                        <a href='https://github.com/EarthmanAman/bill' target="_blank" className='bg-[#1a1e22] py-1.5 px-5 rounded-md shadow-md shadow-gray-400 text-white'>
-                            <div className='flex items-center justify-between'>
-                                <SiGithub />
-                                <p className='ml-2'>Download</p>
-                            </div>
-
-                        </a>
-
-                    </div>
                 </div>
 
-                <div className='w-full'>
+                <motion.div variants={fadeIn} className='w-full'>
                     <div className='hidden md:hidden lg:block'>
                         <Slider {...settings} className=" my-10">
                             <div className='w-full  p-5 mr-2 border-2'>
@@ -155,6 +131,21 @@ export default function Home() {
                         </Slider>
                     </div>
 
+                    <div className='text-center'>
+                        <motion.div variants={fadeIn} className="px-28 md:px-56 lg:px-[30rem]">
+                            <Image loader={imageLoader} src={Flower} alt="divider" />
+                        </motion.div>
+
+                        <motion.div variants={fadeIn}>
+                            <h3 className='font-bold'>PROJECT MOTIVATION</h3>
+                        </motion.div>
+                        <motion.div variants={fadeIn} className='my-3 mt-7 px-10'>
+                            <p className='leading-8 text-sm mb-3'>This was a practice project motivated by the need to have one central place to manage all your bills. When a user register in the platform he/she can start syncing his bills and get payment notifications. The platform also offers continuous monitoring of your bill expenses.</p>
+                            <p className='leading-8 text-sm'>The platform was built with the assumption that all the companies you pay your bill are having a public API where developers can get your information.</p>
+
+                        </motion.div>
+                    </div>
+
                     {/* <div className='my-5 flex space-x-6'>
                         <div className='flex space-x-2 items-center  bg-slate-100 px-3 py-2 rounded-md'>
                             <BsTools size={25} />
@@ -185,11 +176,11 @@ export default function Home() {
                         </div>
 
                     </div> */}
-                </div>
-            </div >
+                </motion.div>
+            </motion.div >
 
             <Footer />
 
-        </div >
+        </motion.div >
     )
 }

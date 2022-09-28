@@ -26,10 +26,17 @@ export default function NavBar() {
                     </li>
 
                     <li className='mr-5 lg:mr-10 text-[0.9rem] border-b-2 font-bold'>
+                        <a href="https://docs.google.com/document/d/1CNtv6La75DhkSAkaXHDusPS23U_mm1PHFxJe1KNjmkw/edit?usp=sharing" target="_blank">
+                            RESUME
+                        </a>
+                    </li>
+
+                    {/* 
+                    <li className='mr-5 lg:mr-10 text-[0.9rem] border-b-2 font-bold'>
                         <Link href="/about">
                             ABOUT
                         </Link>
-                    </li>
+                    </li> */}
 
                     {/* <li className='mr-10 text-xs font-bold'>
                         <Link href="/contact">

@@ -17,6 +17,7 @@ import { fadeIn, slideInLeftFast, slideInRightFast, slideInFromBottom, stagger, 
 
 import ProjectManagement from "../public/assets/pm.png"
 import UI_UX from "../public/assets/ui.png"
+import IT from "../public/assets/it.png"
 import Collage from '../public/assets/c1.jpg'
 import Flower from '../public/assets/flower.png'
 
@@ -155,7 +156,7 @@ export default function Home() {
             </div>
             <div className="w-full px-5">
               <h6 className="">BIOGRAPHY</h6>
-              <p>Work for money and design for love! I'm Hashim, a full stack developer based in Kenya</p>
+              <p>I'm Hashim, a full-stack developer based in Kenya. I have learned to design and develop systems. I have practiced and developed production-level systems,  but most important I fall in love with what I do.</p>
             </div>
 
             <div className="w-full px-5">
@@ -195,6 +196,7 @@ export default function Home() {
             <div className="px-20 md:hidden">
               <Image loader={imageLoader} src={Flower} alt="divider" />
             </div>
+
             <div className="w-full">
               <h6>PROFESSIONAL<br />CERTIFICATIONS</h6>
               <p>Google UI/UX certification</p>
@@ -207,6 +209,11 @@ export default function Home() {
               <p className='mb-2'>Advanced CSS and Sass: Flexbox, Grid, Animations</p>
               <p>Ethereum and Solidity: The Complete Developer’s
                 Guide</p>
+            </div>
+
+            <div className="w-full">
+              <h6>EDUCATION</h6>
+              <p>University of Nairobi - Bsc Computer Science</p>
             </div>
 
             {/* <div className="w-full">
@@ -231,6 +238,9 @@ export default function Home() {
           </motion.div>
           <motion.div className='w-[48%] md:w-[10%]'>
             <Image loader={imageLoader} src={UI_UX} alt="pic 1" />
+          </motion.div>
+          <motion.div className='w-[48%] md:w-[10%]'>
+            <Image loader={imageLoader} src={IT} alt="pic 1" />
           </motion.div>
 
           {/* <motion.div className='w-[48%] md:flex-1'>

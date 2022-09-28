@@ -106,7 +106,7 @@ export default function Home() {
                 </motion.div>
 
 
-                <motion.div variants={fadeIn} className=' border-solid border-t-2 border-[#16151] mt-10 py-10 px-10 lg:px-36 text-center'>
+                {/* <motion.div variants={fadeIn} className=' border-solid border-t-2 border-[#16151] mt-10 py-10 px-10 lg:px-36 text-center'>
 
                     <Slider {...settings} className="">
                         <div>
@@ -161,7 +161,7 @@ export default function Home() {
                         </div>
 
                     </Slider>
-                </motion.div>
+                </motion.div> */}
 
                 <Footer />
             </motion.div>
