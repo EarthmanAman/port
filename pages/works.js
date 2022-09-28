@@ -50,7 +50,7 @@ export default function Home() {
 
                 <motion.div variants={fadeIn} className='m-5 mt-0 lg:m-5'>
                     <h3>Hello good people <span className='text-lg'>&#128075;</span></h3>
-                    <h3>Below are some of my work. Open them to see magic <span className='text-lg'>&#10024; &#128586;</span></h3>
+                    <h3>Below are some of my work. Open and see magic <span className='text-lg'>&#10024;</span></h3>
                     {/* <h3>UI/UX Design, Backend, Frontend or Both </h3> */}
                 </motion.div>
 
