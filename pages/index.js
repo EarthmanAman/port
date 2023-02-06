@@ -54,7 +54,7 @@ export default function Home() {
           <Image loader={imageLoader} src={PSM1} width={40} height={40} alt="pic 1" />
           </motion.div>
           
-          <motion.h1 className="text-[1rem] mb-1 tracking-[0.1rem] md:text-[1.3rem] md:mb-1.5 md:tracking-[0.15rem]">Software Developer/Admin</motion.h1>
+          <motion.h1 className="text-[1rem] mb-1 tracking-[0.1rem] md:text-[1.3rem] md:mb-1.5 md:tracking-[0.15rem]">Full Stack Software Developer</motion.h1>
           <motion.div>
             <h2>My work is always a <span className="text-[#f60961]">Wooow</span></h2>
 
