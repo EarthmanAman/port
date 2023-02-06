@@ -18,6 +18,7 @@ import { fadeIn, slideInLeftFast, slideInRightFast, slideInFromBottom, stagger, 
 import ProjectManagement from "../public/assets/pm.png"
 import UI_UX from "../public/assets/ui.png"
 import IT from "../public/assets/it.png"
+import PSM1 from "../public/assets/psm1.png"
 import Collage from '../public/assets/c1.jpg'
 import Flower from '../public/assets/flower.png'
 
@@ -48,7 +49,11 @@ export default function Home() {
         <NavBar />
         <motion.div variants={fadeIn} className='w-full text-center my-10 mt-5 tracking-widest'>
 
-          <motion.h1 className="text-[1.5rem] mb-1 tracking-[0.2rem] md:text-[1.5rem] md:mb-1.5 md:tracking-[0.3rem]">Hashim Athman</motion.h1>
+          <motion.div className='flex justify-center'>
+          <h1 className="text-[1.5rem] mb-1 tracking-[0.2rem] md:text-[1.5rem] md:mb-1.5 md:tracking-[0.3rem] mr-2">Hashim Athman</h1>
+          <Image loader={imageLoader} src={PSM1} width={40} height={40} alt="pic 1" />
+          </motion.div>
+          
           <motion.h1 className="text-[1rem] mb-1 tracking-[0.1rem] md:text-[1.3rem] md:mb-1.5 md:tracking-[0.15rem]">Software Developer/Admin</motion.h1>
           <motion.div>
             <h2>My work is always a <span className="text-[#f60961]">Wooow</span></h2>
@@ -199,6 +204,7 @@ export default function Home() {
 
             <div className="w-full">
               <h6>PROFESSIONAL<br />CERTIFICATIONS</h6>
+              <p>Professional Scrum Master 1</p>
               <p>Google UI/UX certification</p>
               <p>Google Project Management certification</p>
               <p>Google IT Support certification</p>
@@ -233,6 +239,9 @@ export default function Home() {
           <h2>Certifications</h2>
         </div>
         <motion.div variants={fadeIn} className='w-full flex flex-wrap space-x-1 md:space-x-4  mt-5 items-center justify-center'>
+        <motion.div className='w-[48%] ml-1 md:w-[10%]'>
+            <Image loader={imageLoader} src={PSM1} alt="pic 1" />
+          </motion.div>
           <motion.div className='w-[48%] ml-1 md:w-[10%]'>
             <Image loader={imageLoader} src={ProjectManagement} alt="pic 1" />
           </motion.div>
