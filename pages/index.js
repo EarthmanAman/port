@@ -72,42 +72,42 @@ export default function Home() {
           <Slider {...settings} className="mx-2 my-3 md:mx-48 lg:mx-56">
             <div>
               <SiAdobexd size={25} color="#450135" />
-              <p className='text-[#45013] text-[0.5rem] font-bold mt-1 '>Adobe Xd</p>
+              <p className='text-[#45013] text-[0.7rem] font-bold mt-1 '>Adobe Xd</p>
             </div>
             <div>
               <SiFigma size={25} color="#9d56f7" />
-              <p className='text-[#45013] text-[0.5rem] font-bold mt-1 '>Figma</p>
+              <p className='text-[#45013] text-[0.7rem] font-bold mt-1 '>Figma</p>
             </div>
             <div>
               <SiPython size={25} color="#326a96" />
-              <p className='mt-1 text-[0.5rem] font-bold'>Python</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>Python</p>
             </div>
             <div>
               <DiDjango size={25} color="#092d1f" />
             </div>
             <div>
               <SiJavascript size={25} color="#efd81d" />
-              <p className='mt-1 text-[0.5rem] font-bold'>Javascript</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>Javascript</p>
             </div>
             <div>
               <SiReact size={25} color="#5ed3f3" />
-              <p className='mt-1 text-[0.5rem] font-bold'>React</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>React</p>
             </div>
             <div>
               <TbBrandReactNative size={25} color="#5ed3f3" />
-              <p className='mt-1 text-[0.5rem] font-bold'>React Native</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>React Native</p>
             </div>
             <div>
               <SiHtml5 size={25} color="#dd4b25" />
-              <p className='mt-1 text-[0.5rem] font-bold'>Html</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>Html</p>
             </div>
             <div>
               <SiCss3 size={25} color="#254bdd" />
-              <p className='mt-1 text-[0.5rem] font-bold'>CSS</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>CSS</p>
             </div>
             <div>
               <SiTailwindcss size={25} color="#36b7f0" />
-              <p className='mt-1 text-[0.5rem] font-bold'>Tailwind CSS</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>Tailwind CSS</p>
             </div>
 
             <div>
@@ -117,37 +117,37 @@ export default function Home() {
 
             <div>
               <SiAzuredevops size={25} color="#1391f7" />
-              <p className='mt-1 text-[0.5rem] font-bold'>Devops</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>Devops</p>
             </div>
             <div>
               <SiDocker size={25} color="#00a5d3" />
-              <p className='mt-1 text-[0.5rem] font-bold'>Docker</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>Docker</p>
             </div>
             <div>
               <SiKubernetes size={25} color="#306adf" />
-              <p className='mt-1 text-[0.5rem] font-bold'>Kubernetes</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>Kubernetes</p>
             </div>
             <div>
               <SiGithub size={25} color="#1a1e22" />
-              <p className='mt-1 text-[0.5rem] font-bold'>Github</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>Github</p>
             </div>
             <div>
               <SiPostgresql size={25} color="#31648c" />
-              <p className='mt-1 text-[0.5rem] font-bold'>Postgresql</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>Postgresql</p>
             </div>
             <div>
               <SiMysql size={25} color="#005e88" />
-              <p className='mt-1 text-[0.5rem] font-bold'>Mysql</p>
+              <p className='mt-1 text-[0.7rem] font-bold'>Mysql</p>
             </div>
 
-            <div>
+            {/* <div>
               <SiSolidity size={25} color="#363636" />
               <p className='mt-1 text-[0.5rem] font-bold'>Solidity</p>
             </div>
             <div>
               <SiEthereum size={25} color="#5b6087" />
               <p className='mt-1 text-[0.5rem] font-bold'>Ethereum</p>
-            </div>
+            </div> */}
 
           </Slider>
         </motion.div>

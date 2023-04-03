@@ -38,7 +38,7 @@
     }
 
     p {
-        @apply tracking-wider text-xs font-Montserrat leading-5
+        @apply tracking-wider text-sm font-Montserrat leading-5
     }
 
 }
